@@ -1,5 +1,3 @@
-# https://platform.openai.com/docs/guides/vision?lang=python
-
 import base64
 import requests
 from dotenv import load_dotenv
@@ -13,7 +11,7 @@ textual_message = """ text """
 
 image_paths = ["./images/anki/anki1.png"]
 
-answer_path = './answers/notes/new.md'
+answer_path = './answers/new.md'
 
 def encode_image(image_path):
   with open(image_path, "rb") as image_file:
