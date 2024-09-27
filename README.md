@@ -1,8 +1,6 @@
-# Exploratory-testing-with-ChatGPT
+# Exploratory testing with ChatGPT
 
-Script used to to call OpenAI completions API
-
-https://platform.openai.com/docs/guides/vision?lang=python
+Script used to to call OpenAI completions API, using textual message and images as input. It was created based on the doc: https://platform.openai.com/docs/guides/vision?lang=python
 
 ## Run
 
