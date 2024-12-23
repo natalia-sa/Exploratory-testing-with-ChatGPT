@@ -1,0 +1,31 @@
+Manual test suite for Readmeso - 1,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+"
+
+Light/Dark theme change.",,-Double-click on the icon with the Moon or Sun symbol located in the upper-right corner.,"The application should switch the background and text colors to match the selected theme.
+Each time the icon is clicked, the colors should change once.
+
+    If the theme is already light, it should switch to dark.
+    If the theme is already dark, it should switch to light.","The application switched the background and text colors to match the selected theme.
+Each time the icon was clicked, the colors changed once.
+
+The theme was already light, switched to dark, and then returned to light.",
+Remove the only section currently present in the Readme.,The Readme being edited must contain only one existing section.,Click on the trash icon on the section's indicator button to remove it.,The application should not display errors. The section should be removed and allow adding a first section again.,"The application did not display any errors. The section was removed, and it allowed adding a first section again.",
+Reorganize the sections of the Readme by holding the mouse cursor on any visually indicated area that allows dragging.,Make sure at least two sections are selected for your Readme.,"-Position the mouse cursor over a section.
+-Hold down the left mouse button to rearrange.","-The cursor should change to a selectable item symbol when hovering over a section.
+-Holding down the left mouse button should allow the section to be moved vertically over the list of sections to change its order.
+-Releasing the left mouse button should set the new position of the section.","-The cursor changes to a selectable item symbol when hovering over a section.
+-Holding down the left mouse button does not move the section vertically over the list to change its order.
+-The expected behavior only occurs if the cursor selects the area of the icon.",Evidence Artifacts - readmeso - test suite 1.pdf
+Render HTML in Markdown.,Have selected at least one section of the Readme.,Write HTML in the text editing area.,View the HTML rendered correctly in the preview panel on the right side.,The application does not render the HTML; it only displays the code as text.,Evidence Artifacts - readmeso - test suite 1.pdf
+Reload the editor page and check the cache functionality.,Have edited content in the text editor to be preserved.,"-Write any text to modify the Markdown template for the selected section.
+-Press the F5 key to reload the page.","Upon reloading the page, it is expected that the content remains present on the page so that the user does not lose the work done so far.","Upon reloading the page, the content remains in the editor.",
+Create a custom section with a large number of characters in its name.,Be on the main page of the editor.,"-Click on ""+ Custom Section""
+-Write a name with 1000 characters and submit the creation.","The editor should limit or hide the number of characters, as the name is only necessary for local organization and will not appear in the content of the Readme.","The entire Markdown view is broken, the text editor no longer has accessible width, and the number of characters is not limited.",Evidence Artifacts - readmeso - test suite 1.pdf
+Create a custom section to exist across different sessions of the application and remain in the available sections list.,"-Be on the main page of the application
+-There is 1 custom section",-Press the F5 key to reload the page,"Upon reloading the page, it is expected that the custom section created will remain present on the page so the user does not lose the work done so far.","Upon reloading the page, the created custom section and all its content are lost from the section list. The section named ""Custom Section"" is lost from the list of available sections.",Evidence Artifacts - readmeso - test suite 1.pdf
+Create a large title for the Readme.,"-Be on the main page of the application 
+-Have 1 section selected.","Edit the section content to contain a title that exceeds the horizontal character limit, to the point where a horizontal scrollbar is required for text editing.","The preview area should have a horizontal scrollbar, and the top header should respect the full width of the page.","The preview area does not have a horizontal scrollbar, and the top header does not respect the full width of the page.",Evidence Artifacts - readmeso - test suite 1.pdf
+Viewing Japanese characters,"-Be on the main page of the application
+-Have 1 section selected",Edit the section content with a variety of Japanese characters.,The preview area should render each Japanese character present in the text editor correctly.,The preview area correctly renders each Japanese character present in the text editor.,
