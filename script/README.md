@@ -7,7 +7,7 @@ Script used to to call OpenAI completions API, using textual message and images 
 1. Clone the repository:
     ```bash
     git clone <repository-url>
-    cd <repository-directory>
+    cd <script-directory>
     ```
 
 2. Install the required dependencies:
@@ -15,9 +15,11 @@ Script used to to call OpenAI completions API, using textual message and images 
     pip3 install -r requirements.txt
     ```
 
-3. Add your OpenAI API key to a `.env` file following .env.example
+3. Add your OpenAI API key to a `.env` file following .env.example. 
+
+   - You can generate your key following the instructions in [openai-quick-start](https://platform.openai.com/docs/quickstart#create-and-export-an-api-key)
 
 4. Run the script:
     ```bash
-    python3 ./scripts/visionWithEncodedImage.py  
+    python3 ./script/chatCompletions/visionWithEncodedImage.py  
     ```
