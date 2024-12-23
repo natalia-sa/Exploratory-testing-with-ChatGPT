@@ -1,0 +1,68 @@
+Manual Test Suite for ActivityDiary - 2,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Verify updating location service selecting Network option,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select network option",The location service should update to new value,The location service was updated successfully,
+Verify updating location service selecting GPS option,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select GPS option",The location service should update to new value,The location service was updated successfully,
+Verify updating location service selecting Network option and updating time to valid value,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set time field to a valid number, example 10 minutes",The time field should update to new value,The time field was updated successfully,
+Verify updating location service selecting Network option and updating time to 0,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set time field to 0 minutes",It should not be possible to update value to 0,"It was not possible to update value to 0, instead it was updated to minimum value, which is 2",
+Verify updating location service selecting Network option and updating time to negative number,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set time field to a negative number, example -4 minutes",It should not be possible to update value to negative number,"It was not possible to update value to negative number, instead the positive number is used",
+Verify updating location service selecting Network option and updating time to invalid value with chars,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set time field to an invalid value with chars, example ”time”",It should not be possible to update to invalid char,The app crashes,
+Verify updating location service selecting Network option and updating time to empty string,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set time field to empty string “”",It should not be possible to update to empty string,The app crashes,
+"Verify updating location service selecting Network option and updating time to long value, example: 1440",,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set time field to a long value, example 1440 hours","It should not be possible to update to a huge number
+",The app updates value to maximum which is 60 minutes,
+Verify updating location service selecting Network option and updating meters to 0,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set meters field to 0", It should not be possible to update to 0 meters, It is not possible to update to 0 meters and the app updates value to minimum which is 5 meters,
+"Verify updating location service selecting Network option and updating meters to negative value, example: -2",,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set meters field to -3", It should not be possible to update to negative value,It is not possible to update to negative value and the app updates value to minimum which is 5 meters,
+"Verify updating location service selecting Network option and updating meters to letters instead of numbers, example: “meters”",,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set meters field to “meters”",It should not be possible to update,The tab closes abruptly,
+Verify updating location service selecting Network option and updating meters to empty string,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set meters field to “”", It should not be possible to update to 0 meters,The app crashes,
+Verify visualization when updating meters and time to long value,,"-Click on menu button
+-Click on settings
+-Click on Location service
+-Select Network option
+-Set meters and time field to a long text, more than 100 chars, for example", It should not be possible to update to 0 meters, The app crashes,
+,,, , ,
