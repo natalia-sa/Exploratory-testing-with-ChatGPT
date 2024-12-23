@@ -1,0 +1,44 @@
+Manual Test Suite for ActivityDiary - 1,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Activate location service in GPS and network mode,,- Activate location service in GPS and network mode.,That it activates correctly,It was activated,
+Disable the phone's location and enable GPS and network mode.,,-Disable the phone's location and enable GPS and network mode.,That it displays a warning message.,It was activated,
+Activate location service in GPS and network mode with Wi-Fi turned off.,,-Activate location service in GPS and network mode with Wi-Fi turned off.,That it activates correctly,It was activated,
+Activate location service in network mode.,,-Activate location service in network mode.,That it activates correctly,It was activated,
+Activate location service in network mode with Wi-Fi turned off.,,-Activate location service in network mode with Wi-Fi turned off.,That it activates correctly,It was activated,
+Activate location service in network mode using mobile data.,,-Activate location service in network mode using mobile data.,That it activates correctly,It was activated,
+Update the update interval to 0.,,-Update the update interval to 0.,That it doesn't allow or sets a minimum value.,It automatically set the value to 2.,
+Update the update interval to 60.,,-Update the update interval to 60.,That it sets the value to 60 correctly.,The value was set to 60.,
+Update the update interval to 61.,,-Update the update interval to 61.,"That it sets the value to 60, as it is the maximum.",The value was set to 60.,
+Update the update interval to negative numbers (-1 and -2).,,Update the update interval to negative numbers (-1 and -2).,That it doesn't allow or sets a minimum value.,It automatically set the value to 2.,
+Update the update interval to a negative number smaller than -2.,,-Update the update interval to a negative number smaller than -2.,That it doesn't allow or sets a minimum value.,The value set was the absolute value of the negative number (-10 => 10).,
+"Update the update interval to a very large number (""9"" repeated 10 times).",,"-Update the update interval to a very large number (""9"" repeated 10 times).",That it doesn't allow or sets a minimum value.,The app crashes and remains unable to open the settings until it is uninstalled and reinstalled.,
+"Update the update interval to entries with only letters (""abc"").",,"-Update the update interval to entries with only letters (""abc"").",That it doesn't allow or sets a minimum value.,The app crashes and remains unable to open the settings until it is uninstalled and reinstalled.,
+"Update the update interval to entries with letters (""2b3"").",,"-Update the update interval to entries with letters (""2b3"").",That it doesn't allow or sets a minimum value.,"The value set was 23, meaning all non-numeric characters were filtered out.",
+"Update the update interval to entries with letters (""2b3c4"").",,"-Update the update interval to entries with letters (""2b3c4"").",That it doesn't allow or sets a minimum value.,"The value set was 60, as it is the highest value for this field.",
+"Update the update interval to entries with float numbers (e.g., ""2.45"").",,"-Update the update interval to entries with float numbers (e.g., ""2.45"").",That it doesn't allow or sets a minimum value.,"The value set ignores the ""."" or "","" as well as letters, which may cause confusion for the user.",
+Update the update interval to an empty input (leave the input field without any value).,,-Update the update interval to an empty input (leave the input field without any value).,That it doesn't allow or sets a minimum value.,The app crashes and remains unable to open the settings until it is uninstalled and reinstalled.,
+Update the update interval to an input with spaces followed by numbers.,,-Update the update interval to an input with spaces followed by numbers.,That the spaces are ignored and the number is set correctly for the field.,"The spaces are ignored, and the number is set correctly for the field.",
+Update the update interval to an input with only spaces.,,-Update the update interval to an input with only spaces.,That it doesn't allow or sets a minimum value.,"The app just closes the settings, but it is possible to open them again.",
+"Update the update interval, close the app, reopen it, and check if the value is maintained.",,"-Update the update interval
+-close the app, reopen it
+-check if the value is maintained.",That the value is maintained.,The value was maintained.,
+"Update the update interval, set the Location Service to off, close the app, reopen it, and check if the value is maintained.",,"-Update the update interval
+-set the Location Service to off
+-close the app and reopen it
+-check if the value is maintained.",That the value is maintained.,The value was maintained.,
+Update the distance update to 0.,,-Update the distance update to 0.,That it doesn't allow or sets a minimum value.,A value of 5 meters was set.,
+Update the distance update to a negative number (-1 to -5).,,-Update the distance update to a negative number (-1 to -5).,That it doesn't allow or sets a minimum value.,A value of 5 meters was set.,
+"Update the distance update to a very large number (""9"" repeated 10 times).",,"-Update the distance update to a very large number (""9"" repeated 10 times).",That it doesn't allow or sets a minimum value.,The app crashes and remains unable to open the settings until it is uninstalled and reinstalled.,
+Update the distance update to multiple numbers and test if there is any limit that sets a default value.,,-Update the distance update to multiple numbers and test if there is any limit that sets a default value.,"That when reaching a certain value, it sets a maximum value.",The app does not limit the distance and only stops when a crash occurs.,
+Update the distance update to a negative number smaller than -5.,,-Update the distance update to a negative number smaller than -5.,That it doesn't allow or sets a minimum value.,The value set was the absolute value of the negative number (-10 => 10).,
+"Update the distance update to entries with letters (""2b3"").",,"-Update the distance update to entries with letters (""2b3"").",That it doesn't allow or sets a minimum value.,"The value set was 23, meaning all non-numeric characters were filtered out.",
+"Update the distance update to entries with letters (""2b3c4"").",,"-Update the distance update to entries with letters (""2b3c4"").",That it doesn't allow or sets a minimum value.,"The value set was 234, meaning all non-numeric characters were filtered out.",
+Update the distance update to an empty input (leave the input field without any value).,,-Update the distance update to an empty input (leave the input field without any value).,That it doesn't allow or sets a minimum value.,The app crashes and remains unable to open the settings until it is uninstalled and reinstalled.,
+"Update the distance update to entries with only letters (""abc"").",,"-Update the distance update to entries with only letters (""abc"").",That it doesn't allow or sets a minimum value.,The app crashes and remains unable to open the settings until it is uninstalled and reinstalled.,
+Update the distance update to an input with only spaces.,,-Update the distance update to an input with only spaces.,That it doesn't allow or sets a minimum value.,"The app simply closes the settings, but it is possible to open them again.",
+"Update the distance update to entries with float numbers (e.g., ""2.45"").",,"-Update the distance update to entries with float numbers (e.g., ""2.45"").",That it doesn't allow or sets a minimum value.,"The value set ignores the ""."" or "","", just as it does with letters, which could cause confusion for the user.",
+Click to update the distance update and click on cancel.,,"-Click to update the distance update
+-click on cancel",It should close the popup.,The popup was closed.,
+Click on the update interval and click on cancel.,,"-Click on the update interval
+-click on cancel.",It should close the popup.,The popup was closed.,
