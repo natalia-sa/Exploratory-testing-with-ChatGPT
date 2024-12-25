@@ -1,0 +1,81 @@
+Manual test suite for Readmeso - 2,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Verify if modifications in the editor are reflected in the “Preview” and “Raw” sections,,"-Open the editor
+-Select one section. Example: “Title and Description”
+-Type something in the editor
+-Check the “Preview” and “Raw” sections",The modifications should appear in the “Preview” and “Raw” sections,Modifications correctly appeared in the “Preview” and “Raw” sections,
+Verify that typing a long content in the editor reflects properly in the “Preview” and “Raw” sections,,"-Open the editor
+-Select one section. Example: “Title and Description”
+-Type a long content, with more than 500 characters, for example",Modifications should appear in the “Preview” and “Raw” sections in a easily readable way,"In the “Editor” and “Raw” sections, the content was still easily readable, but
+In the “Preview” section, the page expanded horizontally indefinitely",
+"Verify that the ""Reset"" button deletes all the previous selected sections",,"-Select some sections. Example: “Title and Description” and “Demo”
+-Edit the content of those sections
+-Click on the “Reset” button",All the selected sections should be deleted,All the selected sections were deleted and The default content in the “Title and Description” section was restored,
+Verify that clicking the copy button in the “Raw” section after deleting all sections does not copy anything,,"-Delete all sections
+-Click on the copy button",Nothing should be copied,"Nothing was copied, but after deleting one section the dark mode button disappeared",
+Verify that clicking the download button after deleting all sections download an empty readme file,,"-Delete all sections
+-Click on download button",An Empty readme file should be downloaded,An Empty readme.md file was downloaded,
+Verify that clicking the “Reset” button after deleting all sections does nothing,,"-Delete all sections
+-Click on the “Reset” button",Nothing should happen.,The initial “Title and description” section was displayed again with its original content,
+Verify that clicking the “Reset” button of a section without making any edits to the section results in no changes ,,"-Select one section. Example: “Title and Description”
+-Do not make any changes in the section content 
+-Click on section “Reset” button ",Nothing should happen and the section must remain the same.,Nothing happened and the section remained the same,
+"Verify that selecting two sections of the same type, such as clicking on the “Demo” section twice, allows both sections to be displayed",,"-Select one section. Example: “Demo”
+-Select the same section again",Two “Demo” sections should be displayed,It is not possible to select the same section twice,
+Verify that clicking and holding on a section to move it to the end of the sections list does not result in infinite scrolling and the section returns to its original place,,"-Click and hold on to one section. Example “Title and Description”
+-Try to move it to the end of the sections list, holding for a long time",The view should remain the same and the section should return to its original place.,The sections list scrolls down indefinitely,
+"Verify that selecting all the sections in the section list displays them correctly in the selected list, “Raw”, and “Preview” sections",,-Select all the sections in the section list,"All sections must be displayed in the selected list, “Raw” section, and “Preview” section.",All sections were displayed correctly,
+Verify the behavior when typing the name of a non-existent section in the search bar,,-Type the name of a non-existent section in the search bar.,Nothing should be displayed or a message saying nothing was found,"The message ""The section you're looking for is unavailable"" was displayed",
+Verify the behavior when typing a long word in the search bar,,-Type a long word in the search bar. Examples: something with more than 100 characters,Visualization should not be compromised and there may be a limit on the size of content in the search bar,Visualization was not compromised,
+Verify the behavior when creating a custom section with the exact same name as an already existing section,,"-Click on the “Custom Section” button
+-Type the exact same name of a section that already exists
+-Select the already existent section",The new custom section should be created correctly,The section was created correctly,
+Verify the behavior when recreating a custom section with the exact same name after deleting it,,"-Create a custom section with a random name
+-Type something into that section
+-Delete the created section
+-Create a custom section again with the exact same name",A new custom section with no content should be created or it should not be possible to create the section again,A new section was created with the same content of the deleted one and the older section stayed in the section list,
+Verify the behavior when creating a custom section with the name of an existing section using only lowercase letters,,"-Click on the “Custom Section” button
+-Type the name of an existing section using only lowercase letters. Example: “demo”",A new section with the exact selected name (in lowercase) should be created,The section is created correctly,
+Verify the behavior when resetting a custom section without making any edits,,"-Create a new custom section
+-Do not make any edits
+-Click to reset the section",The section should still have the same content,"A new blank space is added to the title, and the title's first letter changes to uppercase",
+Verify the behavior when creating a custom section with “#” at the start of the title,,"-Click on the “Custom Section” button
+-Type a title starting with “#”",“#” should appear as part of the title, “#” is shown correctly,
+Verify the behavior when creating a custom section with Markdown elements in the title,,"-Click on the “Custom Section” button
+-Type a title starting with some markdown element",The title should be displayed with the Markdown element as the title,The title was shown correctly,
+Verify the behavior when creating a custom section with a long title,,"-Click on the “Custom Section” button
+-Type a long title. Example: more than 100 characters","There should be a limit on title size, or it should be created without compromising the visualization",Visualization did not work correctly,
+"Verify the behavior of the search when typing the name of an existing section, but in uppercase",,"-Click on the search bar
+-Type the name of an existing section, but in uppercase",The search should be case insensitive and the section must be found,The section was found correctly,
+Verify the behavior of the search bar when searching for a section in Portuguese without using the accents,,"-Go to the landing page
+-Select the Portuguese idiom
+-Go to the editor
+-Click on the search bar
+-Type the name of a section whose correct writing has an accent, but without placing the accent. Example: There is a section “Demonstração”. Search for “Demonstraçao”", The section must be found correctly,The section was not found,
+Verify the behavior of the page when the dark mode button is clicked,,-Click on the dark mode button,"The page should be displayed correctly in dark mode, with all the original sections",The page is displayed correctly,
+Verify the behavior of the page when all sections are deleted and dark mode is selected,,"-Delete all sections
+-Select the dark mode","The page should be displayed in dark mode, with the same elements",The dark mode button disappeared after deleting one section,
+Verify the behavior of the page when the selecting language different than english,,"-Select english idiom in landing page
+-Select some sections
+-Edit the sections
+-Change the selected language to portuguese",The language should change correctly,"Parts of the page are shown in Portuguese, but others are shown in English",
+Verify the behavior when clicking the coffee button,,-Click on the coffee button,The donations component must be displayed correctly,The component is shown correctly,
+Verify the behavior when changing idiom in landing page,,"-Type something in the editor
+-Go to the landing page, clicking on “#” button
+-Select Portuguese idiom
+-Go back to editor",The page with the selected idiom and all original elements must be shown,The coffee button disappears,
+Verify the behavior of the donation feature when typing invalid email,,"-Click on the coffee button
+-Type an invalid email. Example “user@”
+-Click on the pay button",It should not be possible to make the donation and an error message must be shown,"The message ""Please enter a valid email"" is shown",
+Verify the behavior when selecting an idiom different than english and searching for a section that does not exist,,"-Go the the landing page
+-Select an idiom different than english
+-Search for a section that does not exist",The translation of the message that appears in English must appear in the selected idiom,The message is shown in English,
+Verify the behavior of the copy button,,"-Select some sections
+-Edit them
+-Click on the copy button
+-Paste the content somewhere else",The correct content must be copied with the correct content,The content was copied successfully,
+Verify the behavior of the download button,,"-Select some sections
+-Edit them
+-Click on the download button
+-Open the downloaded file",A readme.md file must be downloaded with the correct content,The file was downloaded successfully with the correct content,
