@@ -1,0 +1,159 @@
+Manual test suite for OmniNotes - 1,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Creation of a simple note with text in the title and content.,,"-Click on the ""+"" symbol.
+-Select ""Text Note.""
+-Enter the title: ""Tarefas da Semana.""
+-Enter the content: ""Quiz de Transformação Digital.""
+-Click the back arrow to save and exit.",Task created.,Task created.,
+Creation of a note with a title and no content.,,"-Click on the ""+"" symbol.
+-Select ""Text Note.""
+-Enter the title ""Shopping List.""
+-Click on the back arrow.",Task created without content.,Task created without content.,
+Creation of a note with an excessively long title.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write a title with more than 1000 characters
+-Click the back arrow",Task created.,Task created.,
+Creation of a note with excessively long content.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write a short title (10 characters)
+-Write a long text in the content (50,000 characters)
+-Click the back arrow",Task created.,Task created.,
+Creation of a note with content but without a title.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write the text ""Quiz de Transformação Digital"" in the content
+-Click the back arrow",Task created.,Task created.,
+Creation of a note with a title that already exists among the notes created.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write the title as ""notas de aula""
+-Click the back arrow
+-Click on the ""+"" symbol again
+-Click on ""Text Note""
+-Write the title as ""notas de aula""
+-Click the back arrow",Two tasks were created with the same title.,Two tasks were created with the same title.,
+Creation of a note with the addition of a photo taken in real-time.,,"-Click on the + symbol
+-Click on Text Note
+-Write any text in the title
+-Write any text in the content
+-Click on the paperclip to attach a document
+-Click on Camera
+-Take a photo
+-Confirm the photo choice
+-Click on the back arrow",Task created with photo attached.,"The app did not display the photo that was taken, only a blank space in the note that, when clicked, shows a completely black image.",Evidence Artifacts - OmniNotes - test suite 1.pdf
+Creation of a note with the addition of a photo from the phone's files.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write any text in the title
+-Write any text in the content
+-Click on the paperclip to attach a document
+-Click on ""Files""
+-Select an image file from the device
+-Click on the back arrow",Task created with photo attached.,Task created with photo attached.,
+Creation of a note with the addition of a video recorded in real-time.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write any text in the title
+-Write any text in the content
+-Click on the paperclip to attach a document
+-Click on ""Video""
+-Record a video
+-Confirm the video selection
+-Click on the back arrow-",Task created with an attached video.,"The application did not display the video attachment, only a blank space in the note that, when clicked, redirects to a video with no content.",Evidence Artifacts - OmniNotes - test suite 1.pdf
+Creation of a note with an audio recording attachment.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write any text in the title
+-Write any text in the content
+-Click the paperclip to attach a document
+-Click on ""Record""
+-Record audio
+-Click ""Stop""
+-Click the back arrow",Task created with attached audio.,Task created with attached audio.,
+Creation of a note with a sketch attachment.,,"-Click the ""+"" symbol
+-Click on Text Note
+-Write any text in the title
+-Write any text in the content
+-Click the clip to attach a document
+-Click on Sketch
+-Draw any sketch
+-Click the back arrow
+-Click the back arrow",Task created with sketch attached.,Task created with sketch attached.,
+Creation of a note with a location attachment.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write any text in the title
+-Write any text in the content
+-Click on the paperclip to attach a document
+-Click on ""Location""
+-Click the back arrow",Task created with location attached.,"The app displayed an error message of ""Location not found"" and the note was created without the location.",Evidence Artifacts - OmniNotes - test suite 1.pdf
+Creation of a note with its addition to a category.,,"Click on the ""+"" symbol.
+Click on ""Text Note.""
+Write any text in the title.
+Write any text in the content.
+Click on the folder symbol to add a category.
+Click on ""Add Category.""
+Type the name of the new category.
+Click ""OK.""
+Click on the back arrow.",Task created and marked with the newly created category.,Task created and marked with the newly created category.,
+Creation of a note with addition to a new category without a name.,,"Click the ""+"" symbol
+Click on ""Text Note""
+Write any text in the title
+Write any text in the content
+Click on the folder symbol to add a category
+Click on ""Add Category""
+Click ""OK""
+Click on the back arrow",Error indicating that the category has no name.,"Error message displayed: ""Category title missing.""",
+Creation of a note with a to-do list.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write any text in the title
+-Click on the three dots in the upper-right corner
+-Click on ""Activate list""
+-Click on ""New item""
+-Type text for the item
+-Click on ""New item""
+-Type text for another item
+-Click on the back arrow",Task created with a to-do list.,Task created with a to-do list.,
+Creation of a note with an empty to-do list.,,"-Click the ""+"" symbol.
+-Click on ""Text Note.""
+-Write any text in the title.
+-Click on the three dots in the upper-right corner.
+-Click the back arrow.",Task created with an empty to-do list.,Task created with an empty to-do list.,
+Creation of a note with a reminder.,,"-Click the + symbol
+-Click on Text Note
+-Write some text in the title
+-Write some text in the content
+-Click on Add reminder
+-Click the back arrow",Task created with reminder added.,"The app displayed an error message indicating that something went wrong in Omni Notes and a report was sent to the developer, after which the app closed completely.",Evidence Artifacts - OmniNotes - test suite 1.pdf
+Creation of a note with an attached video from the phone's files.,,"-Click on the ""+"" symbol
+-Click on ""Text Note""
+-Write any text in the title
+-Write any text in the content
+-Click on the paperclip to attach a document
+-Click on ""Files""
+-Select a video file from the device
+-Click the back arrow",Task created with video attachment.,"The video appeared to be attached, but when clicking on the video in the note, it couldn't be played, showing only an empty video.",Evidence Artifacts - OmniNotes - test suite 1.pdf
+Creation of a note with an audio attachment from the phone's files.,,"-Click the ""+"" symbol.
+-Click on ""Text Note"".
+-Write any text in the title.
+-Write any text in the content.
+-Click the paperclip to attach a document.
+-Click on ""Files"".
+-Select an audio file from the device.
+-Click the back arrow.",Task created with audio attachment.,Task created with audio attachment.,
+Creation of a note protected with the creation of a new password.,,"-Click the + symbol
+-Click on Text Note
+-Write any text in the title
+-Write any text in the content
+-Click the three dots in the upper right corner
+-Click on Lock
+-Enter a new password
+-Confirm the new password
+-Enter a question for password recovery
+-Enter the answer for password recovery
+-Confirm the answer
+-Click OK
+-Click the back arrow",Task created with password protection.,Task created with password protection.,
+Creation of a protected note after a new password has already been created.,,"-Click on the + symbol.
+-Click on ""Text Note.""
+-Write any text in the title.
+-Write any text in the content.
+-Click the three dots in the top-right corner.
+-Click on ""Lock.""
+-Enter the password.
+-Click the back arrow.",Task created with password protection.,Task created with password protection.,
