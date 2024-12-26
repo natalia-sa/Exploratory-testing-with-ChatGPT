@@ -1,0 +1,61 @@
+Manual test suite for OmniNotes - 2,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Verify if it is possible to create note with simple text,,"Click on “+” button
+Click on add text note
+Add a title and content
+Add note",The note must be created successfully,The note was created successfully,
+Verify if it is possible to create note with no title,,"Click on “+” button
+Click on add text note
+Add only content and let title field empty
+Add note",The note must be created successfully or an error message must be shown,The note was created with no title,
+Verify if it is possible to create note only with title,,"Click on “+” button
+Click on add text note
+Add only title and let content field empty
+Add note",The note must be created successfully or an error message must be shown,The note was created successfully,
+Verify if it is possible to create note with special characters and emojis,,"Click on “+” button
+Click on add text note
+Add title and content with special characters and emojis
+Add note",The note must be created successfully or an error message must be shown, Note was created successfully,
+Verify creating a note and then clicking on back button,,"Click on “+” button
+Click on add text note
+Add title and content 
+Click on back button",The note should not be created,"The note is created, because the note do not depend on any button to be created",
+Verify creating a note with image in content,,"Click on “+” button
+Click on add text note
+Add text title and put an take a picture from with camera to put  in content
+Add note",The note should be created successfully,The note is created. but the image is not shown,Evidence Artifacts - OmniNotes - test suite 2.pdf
+Verify creating a note with draw in content,,"Click on “+” button
+Click on add text note
+Add text title and put an image in content
+Add note",The note should be created successfully,The note was created successfully,
+Verify creating a note with audio in content,,"Click on “+” button
+Click on add text note
+Add text title and put an audio in content
+Add note",The note should be created successfully,The note was created successfully,
+Verify visualization with after creating a lot of notes,,"Click on “+” button
+Click on add text note
+Create some notes, example 15 notes
+See visualization",The notes should be created and viewing cannot be compromised,Viewing was not compromised,
+Verify creating two notes with the same title,,"Click on “+” button
+Click on add text note
+Create one note with the exact same content of a previous note
+Add note",The note should be created successfully,Note was created successfully,
+Verify adding reminder to a note,,"Click on “+” button
+Click on add text note
+Create one note with title and content
+Click on add reminder
+Add note",The note should be created with reminder successfully,The app crashes,Evidence Artifacts - OmniNotes - test suite 2.pdf
+Verify adding reminder to a note with no content,,"Click on “+” button
+Click on add text note
+Create one note with title and no content
+Click on add reminder
+Add note",The note should be created successfully,The app crashes,Evidence Artifacts - OmniNotes - test suite 2.pdf
+Verify adding long text in title and content,,"Click on “+” button
+Click on add text note
+Create one note with title and no content with more than 500 words
+Add note",The note should be created successfully,The note was created successfully,
+Verify adding a note with no content,,"Click on “+” button
+Click on add text note
+Create one note with no title and content
+Add note",The note should be created successfully or an error message should be shown,An error message is shown,
