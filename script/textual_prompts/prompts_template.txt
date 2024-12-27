@@ -1,0 +1,90 @@
+# Prompt 1
+
+From the point of view of a tester, generate exploratory test
+cases to the [APP_NAME] app.
+I will provide screenshots of the app GUI.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results
+
+
+# Prompt 2
+
+From the point of view of a tester, give me exploratory test
+cases to the [APP_NAME] app.
+Consider unusual flows, try to find possible bugs, failures, etc.
+I will provide screenshots of the app GUI.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results
+
+# Prompt 3
+
+From the point of view of a tester, give me exploratory test
+cases to the [APP_NAME] app.
+Consider unusual flows, try to find possible bugs, failures, etc.
+I will provide screenshots of the app GUI.
+The images contain tags that identify some features and
+characteristics of the app.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results
+
+# Prompt 4
+
+From the point of view of a tester, give me exploratory test
+cases to the [FEATURE_NAME] in the [APP_NAME] app.
+Consider unusual flows, try to find possible bugs, failures, etc.
+I will provide screenshots of the app GUI.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results
+
+# Prompt 5
+
+From the point of view of a tester, give me test cases to the
+[FEATURE_NAME] in the [APP_NAME] app.
+[APP_DESCRIPTION].
+Consider unusual flows, try to find possible bugs, failures,
+security issues, etc.
+I will provide screenshots of the app GUI.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results
+
+# Prompt 6
+
+From the point of view of a tester, give me test cases to the
+[FEATURE_NAME] in the [APP_NAME] app.
+[ENVIRONMENT_DESCRIPTION].
+[APP_DESCRIPTION].
+Consider unusual flows, try to find possible bugs, failures,
+security issues, etc.
+I will provide screenshots of the app GUI.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results

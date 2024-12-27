@@ -11,5 +11,6 @@ ChatGPT's ability to generate test suites was evaluated for 5 systems and the AI
 ## Table of Contents
 
 - [Python script](./script/)
+- [Prompt templates](./script/textual_prompts)
 - [ChtGPT generated test suites](./script/answers)
 - [Manual test suites](./manual_suites)
