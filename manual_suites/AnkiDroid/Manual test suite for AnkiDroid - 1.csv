@@ -1,0 +1,23 @@
+Manual test suite for AnkiDroid - 1,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Creation of Basic Card Without Attachments (Text Only) - 1 Tag,,"-On the ""Add Note"" screen,
+-select the 'Basic' type,
+-and enter text into the 'Front' and 'Back' fields.",The card must be added.,The card was added.,
+Creation of a Basic card with an image on the front and text on the back.,,"-On the ""Add Note"" screen,
+-select the 'Basic' type,
+-attach an image to the front, and type text on the back.",The card must be added.,The card was added.,
+Creation of a Basic card with text on the front and an image on the back.,,"-On the ""Add Note"" screen,
+-select the 'Basic' type,
+-type in 'front,' and
+-attach an image in 'back.'",The card must be added.,The card was added.,
+Creation of a Basic card with the 'Front' field left blank and text in the 'Back' field.,,"-On the ""Add Note"" screen,
+-select the 'Basic' type,
+-leave the 'Front' field blank, and
+-enter text in the 'Back' field.","Message ""Error saving note"" and the card is not created.","Message ""Error saving note"" and the card is not created.",
+Creation of Basic card with Inversion (Basic and Reversed Card),"Entrada: ""Front: Teste 1!"", ""Back: felipe""","-Create a ""Basic (and Reversed Card)"" card with text in the ""Front"" and ""Back"" fields.","Two cards created: one with ""Front"" and ""Back"" and the other with ""Back"" and ""Front"".","Two identical cards were created. Shouldn't one have been created with text X in 'Front' and text Y in 'Back', and the other with text Y in 'Front' and text X in 'Back'?",
+"Creation of a ""Basic (and reversed card)"" card with the ""Front"" field blank.","Entrada: ""Front: (em branco)"", ""Back: São Paulo""","-Try to create a ""Basic (and reversed card)"" card by entering text in the 'Back' field and leaving the 'Front' field blank.","Only one card should be created, with the Front field filled with what was entered in the 'Back' field.","Only one card was created, with the Front field filled with what was entered in the 'Back' field.",
+Creating a Basic and Optional Reversed Card with the 'Add Reverse' field left blank.,,"-Create a card of the type Basic (optional reversed card) with text in the ""Front"" and ""Back"" fields.","A card was created with ""Front"" and ""Back"". The ""Add Reverse"" field does not generate an additional card.","Only 1 card was created, with Front and Back.",
+"Creation of a card of type Basic (optional reversed card) with texts in the ""Front"", ""Back"" fields, and filling in the ""Add Reverse"" field.","Entrada: ""Front: Bem-vindo"", ""Back: 123450"", ""Add Reverse: BRASIL""","-Create a card of type Basic (optional reversed card) with texts in the ""Front"", ""Back"", and ""Add Reverse"" fields.","Dois cartões foram criados: um com ""Front"" e ""Back"", e outro com ""Back"" e ""Add Reverse"".","Two duplicate cards are created, with Front and Back.",
+"Cards with identical ""Front"" are blocked.",,"-Create 2 cards of the same type with the same ""Front"".","The ""Front"" field turns red, indicating that it is not possible to create this card.","For cards with repeated ""Front"" fields of a certain type, they are blocked. However, if the card type is changed and the ""Front"" field, previously used in another card of a different type, is entered again, the program allows it, which does not make sense.",
+Insertion of Images and Audios,,"-Create a Basic card and add an image to the ""Front"" field.","Card created with the image visible in the ""Front"" field.","Card created with the image visible in the ""Front"" field.",

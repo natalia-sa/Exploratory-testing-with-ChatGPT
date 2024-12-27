@@ -1,0 +1,61 @@
+Manual test suite for AnkiDroid - 2,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Verify if it is possible to create a new card with valid information,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default and random text in front and back fields, such as “Card front” and “Card back”
+-Click on button to add card",The new card should be created successfully,The card was created successfully,
+Verify if it is possible to create a new card without front information,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, random text in back and let front field empty
+-Click on button to add card",The new card should not be created,Card was not created and an error message was shown,
+Verify if it is possible to create a new card without back information,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, random text in front and let back field empty
+-Click on button to add card",The new card should not be created, It is possible to create the card,
+Verify if it is possible to create a new card with front image,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, put a valid text in back and select a front image
+-Click on button to add card",The new card should be created successfully,The card was created successfully,
+Verify if it is possible to create a new card with front audio ,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, put a valid text in back and select front audio 
+-Click on button to add card",The new card should be created successfully,The card was created successfully,
+Verify if it is possible to create a new card with back image ,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, put a valid text in front and select back image
+-Click on button to add card",The new card should be created successfully,The card was created successfully,
+Verify if it is possible to create a new card with back and front image,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default and back and front images
+-Click on button to add card",The new card should be created successfully,The card was created successfully,
+Verify if it is possible to create a new card with a tag,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default and back and front valid texts
+-Click on “tag”
+-Add new tag with random name
+-Click on button to add card",The new card should be created successfully,The card was created successfully,
+Verify if it is possible to create a new card with special characters,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default and back and front texts with special characters, such as “%”
+-Click on “Adicionar” button",The new card should be created successfully,The card was created successfully,
+Verify clicking on back button after filling out the form,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default and valid front and back texts
+-Click on back button",The new card should not be created,The card was not created,
+Verify adding new card without filling out the form,,"-Click on “+” button
+-Click on “Adicionar” button
+-Do not fill any fields
+-Click on add button",The new card should not be created,The card was not created,
+Verify adding new card with type different than default,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type different than basic, cheap default, valid front and back texts 
+-Click on button to add card", The new card should be created successfully,The card was created successfully,
+Verify adding new card with long text in front field,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, valid back text and a long text in front. Example: more than 100 characters 
+-Click on button to add card",The new card should be created successfully or a message saying field exceeds limit must be shown,The card was created successfully,
+Verify adding new card front text “&bsol;”,,"-Click on “+” button
+-Click on “Adicionar” button
+-Create a new card with type basic, cheap default, valid back text and the front text “&bsol;”
+-Click on button to add card",The new card should be created successfully , The app crashes,Evidence Artifacts - AnkiDroid - test suite 2.pdf
