@@ -1,0 +1,97 @@
+Manual test suite for Par de jarro - 1,,,,,
+,,,,,
+Descrição,Pré-requisitos,Passos Para Reprodução,Resultado Esperado,Resultado Obtido,Artefato Comprobatório
+User registration,Be logged out,"-Click on the Profile icon in the upper right corner.
+-Click on the ""Sign Up"" text.
+-Fill in all the fields.
+-Click on ""Create Account.""
+-Click again on the Profile icon in the upper right corner.
+-Verify that you are logged out.","After user registration, redirect to the home page and be logged in.",I was not redirected to the home page or logged in.,
+System login,Be logged out.,"-Click on the profile icon in the top right corner.
+- Click on the button labeled ""Log in.""
+-Fill in the email and password fields.
+-Click on the button labeled ""Log in.""
+-Verify that you are logged into the system.","After filling in the email and password fields and clicking the ""Log in"" button, you should be logged into the system.",Positive result: I was successfully logged into the system.,
+Log out of the system.,Be logged in,"-Click on the Profile icon in the top-right corner.
+-Click the ""Log Out"" button.
+-Click on the Profile icon again in the top-right corner.
+-Verify that you are logged out.","After pressing the 'Log Out' button, you should be redirected to the home screen and appear logged out of the system.",Positive result. I was logged out of the system.,
+View profile,Be logged in,"-Click on the Profile icon in the top right corner.
+- Click on the 'Log In' button.
+-Fill in the email and password fields.
+-Click on the 'Log In' button.
+-Click on the Profile icon again in the top right corner.
+-Click on the button with your name.
+-Verify that you have been redirected to your profile page",Be redirected to the profile page,Positive result. I was redirected to my profile page.,
+Edit profile,Be logged in,"-Click on the Profile icon in the top-right corner
+-Click the button labeled 'Log In'
+-Fill in the email and password fields
+-Click the button labeled 'Log In'
+-Click on the Profile icon again in the top-right corner
+-Click the button with your name
+-Change the name
+-Press the 'Edit' button
+-Press the 'X' in the top-left corner
+-Check that the name was not modified
+-Press F5
+-Check that the name has been modified",Data modified on the profile page should reflect the changes made,"Average result. After editing the name field and returning to the home page, it is noticed that the name was not modified. However, after performing a full page refresh, updating the page's JS, the name is correctly updated",
+User registration with the same email,"1 - Be logged out.
+2 - Pre-register a user with the email teste@teste.com.","-Click on the Profile icon in the top right corner.
+-Click on the text 'Sign up'.
+-Fill in all the fields.
+-Fill in the email field with teste@teste.com.
+-Click on create account.
+-Check that it is not possible to create the account.","It will not be possible to create the account, and a visual error will be returned.","Medium result. Although it is not possible to register the user, no visual notification was returned indicating that users with duplicate emails cannot be registered",
+User registration with CPF not following the CPF format,Be logged out,"-Click on the Profile icon in the upper right corner.
+-Click on the text 'Sign up'.
+-Fill in all the fields.
+-Fill in the CPF field with 222.222.222-22.
+-Click on ""Create account"".
+-Verify that it was possible to create the account.",It will not be possible to create a user with an invalid CPF.,Negative result. It was possible to create a user with an invalid CPF.,Evidence Artifacts - Par de jarro - test suite 1
+User registration with repeated CPF.,"1 - Be logged out
+2 - Previously register a user with CPF 222.222.222-22","-Click on the Profile icon in the upper right corner
+-Click on the text 'Sign Up'
+-Fill in all the fields
+-Fill in the CPF field with 222.222.222-22
+-Click on Create Account
+-Verify that it was not possible to create the account",It will not be possible to create a user with a duplicate CPF.,"Average result. Although it is not possible to register the user, no visual warning was returned indicating that users with duplicate CPF cannot be registered",
+User registration with only allowed genders by the system.,Be logged out,"-Click on the Profile icon in the top right corner
+-Click on the ""Register"" text
+-Fill in all the fields
+-Leave the gender field blank without selecting a specific gender
+-Click on ""Create account""
+-Verify that it was not possible to create the account",It will not be possible to create a user with a gender that is not allowed by the system.,"Medium result. Although it is not possible to create the user, I did not receive any visual notification that the user cannot be created.",
+User registration without email.,Be logged out,"-Click on the Profile icon in the top right corner
+-Click on the 'Sign Up' text
+-Fill in all fields except the email field
+-Click on ""Create Account""
+-Verify that the account could not be created",It will not be possible to create a user without an email.,"Medium result. Although it is not possible to register the user, no visual alert was shown indicating that it's not possible to register a user without an email.",
+User registration without CPF,Be logged out,"-Click on the Profile icon in the top right corner.
+-Click on the text ""Register.""
+-Fill in all fields except for the CPF field.
+-Click on ""Create Account.""
+-Verify that it is not possible to create the account.",It will not be possible to create a user without a CPF.,"Medium result. Although it is not possible to register the user, I was not provided with any visual indication that it is not possible to create a user without a CPF.",
+User registration without a password.,Be logged out,"-Click on the Profile icon in the top right corner.
+-Click on the ""Register"" text.
+-Fill in all fields except the password field.
+-Click on ""Create account.""
+-Check if the account was created.",It will not be possible to create a user without a password.,Negative result. It was possible to create a user without a password.,
+User registration without a university allowed by the system.,Be logged out,"-Click on the Profile icon in the top right corner.
+-Click on the text 'Register'.
+-Fill in all fields.
+-Fill in the university field without selecting a specific university.
+-Click on 'Create account'.
+-Verify that the account could not be created.",It will not be possible to create a user with a university not allowed by the system.,"Medium result. Although it is not possible to register the user, I was not shown any visual notification indicating that it is not possible to register a user without selecting a specific university.",
+User registration with an email that does not follow the email format.,Be logged out,"-Click on the Profile icon in the upper right corner
+-Click on the text 'Sign Up'
+-Fill in all the fields
+-Enter the email field with ""mail""
+-Click on create account
+-Check that the account cannot be created",It will not be possible to create a user with an email that does not follow the email format standard,"Average result. Although it is not possible to register the user, I was not provided with any visual notification that it is not possible to register the user.",
+User registration without a bio.,Be logged out,"-Click on the Profile icon in the top right corner
+-Click on the text 'Sign up'
+-Fill in all the fields except for the bio field
+-Click on ""Create account""
+-Check if it is possible to create the account","ChatGPT
+
+It will be possible to create a user without a bio.",Positive result. It was possible to create a user without a bio.,

@@ -28,12 +28,12 @@ Verify updating location service selecting Network option and updating time to i
 -Click on settings
 -Click on Location service
 -Select Network option
--Set time field to an invalid value with chars, example ”time”",It should not be possible to update to invalid char,The app crashes,
+-Set time field to an invalid value with chars, example ”time”",It should not be possible to update to invalid char,The app crashes,Evidence Artifacts - ActivityDiary - test suite 2.pdf
 Verify updating location service selecting Network option and updating time to empty string,,"-Click on menu button
 -Click on settings
 -Click on Location service
 -Select Network option
--Set time field to empty string “”",It should not be possible to update to empty string,The app crashes,
+-Set time field to empty string “”",It should not be possible to update to empty string,The app crashes,Evidence Artifacts - ActivityDiary - test suite 2.pdf
 "Verify updating location service selecting Network option and updating time to long value, example: 1440",,"-Click on menu button
 -Click on settings
 -Click on Location service
@@ -59,10 +59,10 @@ Verify updating location service selecting Network option and updating meters to
 -Click on settings
 -Click on Location service
 -Select Network option
--Set meters field to “”", It should not be possible to update to 0 meters,The app crashes,
+-Set meters field to “”", It should not be possible to update to 0 meters,The app crashes,Evidence Artifacts - ActivityDiary - test suite 2.pdf
 Verify visualization when updating meters and time to long value,,"-Click on menu button
 -Click on settings
 -Click on Location service
 -Select Network option
--Set meters and time field to a long text, more than 100 chars, for example", It should not be possible to update to 0 meters, The app crashes,
+-Set meters and time field to a long text, more than 100 chars, for example", It should not be possible to update to 0 meters, The app crashes,Evidence Artifacts - ActivityDiary - test suite 2.pdf
 ,,, , ,
