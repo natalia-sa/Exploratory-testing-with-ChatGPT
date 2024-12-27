@@ -1,6 +1,6 @@
 Manual test suite for Par de jarro - 1,,,,,
 ,,,,,
-Descrição,Pré-requisitos,Passos Para Reprodução,Resultado Esperado,Resultado Obtido,Artefato Comprobatório
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
 User registration,Be logged out,"-Click on the Profile icon in the upper right corner.
 -Click on the ""Sign Up"" text.
 -Fill in all the fields.

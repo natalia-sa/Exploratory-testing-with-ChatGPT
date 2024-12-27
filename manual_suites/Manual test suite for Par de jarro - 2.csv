@@ -1,0 +1,105 @@
+Manual test suite for Par de jarro - 2,,,,,
+,,,,,
+Description,Prerequisites,steps for reproduction,expected result,Obtained Result,Evidence Artifact
+Verify the feature of registering a new user when all input information are empty,,"-Click on profile icon 
+-Click on “Cadastre-se” link
+-Do not fill any input and click on “Criar Conta”",It should not be possible to create the account,"It was not possible to create the account, but nothing happens on the frontend",
+Verify the feature of registering a new user when all required input information are filled with valid data,,"-Click on profile icon 
+-Click on “Cadastre-se” link
+-Fill all required inputs with valid data
+-Click on “Criar Conta”",User should be created successfully ,I accidentally chose a CPF that was already in use. The backend throws a 500 error and nothing happens on the frontend,Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of registering a new user when all required input information are filled with valid data,,"-Click on profile icon 
+-Click on “Cadastre-se” link
+-Fill all required inputs with valid data
+-Click on “Criar Conta”",User should be created successfully ,User was created successfully and redirected to initial page,
+Verify the feature of login,A valid user is registered,"-Click on profile pic
+-Click on “entrar”
+-Input the correct information
+-Click on profile pic
+-Click on “Meu Perfil”",User should login successfully and after clicking on profile pic the correct data must be displayed,"User logged in successfully, but the birthday information was not registered and an incorrect date was displayed",Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of logout,User is logged in,"-Click on profile pic
+-Click on “Deslogar”
+-Try to access profile page clicking on profile pic again",user must be successfully logged out and their profile must not be displayed,User was logged out successfully,
+Verify the feature of registering a new user when inputting a gender that does not exist,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input valid information, except in the “Gênero”, put something invalid
+-Click on “Criar Conta”",It should not be possible to register user,Is was not possible to register user,
+Verify the feature of registering a new user when inputting a long content in all text inputs,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input long content in text inputs",There should be no problems viewing the data, Data was correctly displayed,
+Verify the feature of registering a new user when inputting an empty password,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input valid data, but do not fill “senha” field
+-Click on “Criar Conta”",It should not be possible to register user,User was registered and it was possible to make login with it,
+Verify the feature of registering a new user when inputting an invalid email,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input valid data, but put invalid emails
+-Click on “Criar Conta”", It should not be possible to register user,It was not possible to register user,
+Verify the feature of registering a new user when inputting an invalid cpf. Example: 00000000000,,"-Click in profile pic
+-Click on “Cadastre-se” link
+-Input valid data, but put invalid cpf
+-Click on “Criar Conta”",It should not be possible to register the user,It was possible to register user,Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of registering a new user when inputting an Incorrect state code in telephone input,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input valid data, but put invalid state code
+-Click on “Criar Conta”",It should not be possible to register user, It was possible to register the user,Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of registering a new user when inputting text data in numeric input fields,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input text data in numeric inputs, such as “cpf”, “Telefone”
+-Click on “Criar Conta”",It should not be possible to register user,It was not possible to write letters in those fields,
+Verify the feature of registering a new user when inputting an university not registered in the system,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input a university name not registered in the system
+-Click on “Criar Conta”",It should not be possible to register user, It was not possible to register user,
+Verify the feature of login when inputting incorrect email,,"-Click on profile pic
+-Click on “entrar”
+-input an email not registered in the system
+-Click on “entrar”", It should not be possible to login,It was not possible to login,
+"Verify the feature of login when inputting correct email, but incorrect password",There is a user registered in the system,"-Click on profile pic
+-Click on “entrar”
+-Input the registered email, but input the incorrect password
+-Click on “entrar”",It should not be possible to login, It was not possible to login,
+Verify the feature of login when inputting an existing email with some extra data,There is a user registered in the system,"-Click on profile pic
+-Click on “entrar”
+-Input the registered email, but with some extra data and input the correct password. Example: the email registered was natalia@gmail.com, input natalia@gmail.comm
+-Click on “entrar”",It should not be possible to login,It was not possible to login,
+Verify the feature of login when inputting correct email and password with some extra content,There is a user registered in the system,"-Click on profile pic
+-Click on “entrar”
+-Input the registered email, input the password added with some data. Example: the password registered was 123, input 1234
+-Click on “entrar”", It should not be possible to login,It was not possible to login,
+Verify the feature of registering a new user when inputting long bio,,"-Click on profile pic
+-Click on “Cadastre-se” link
+-Input valid data in all inputs and choose a long bio. More than 500 words
+-Click on “Criar Conta”
+-Make Login with the registered user
+-Click on profile pic
+-Click on “Meu Perfil”"," It should be possible to register user and see the correct information in profile page, with no visualization problems with bio, or a message must be shown alerting the bio is too long", It was not possible to register the user because bio was too long. Nothing was shown in frontend and error 500 was returned in backend,Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of editing a user,User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing inputs, including the profile picture, except password, email and cpf
+-Click on “editar”
+-Check if changes were saved going back to other page and entering profile page again",It should be possible to edit fields ,Edits are not shown until you get out of the profile page and enter it again,
+Verify the feature of editing a user with invalid phone number,User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing phone with invalid data, example phone with a letter, or with less numbers then required
+-Click on “editar”",It should not be possible to edit phone,It is not possible to edit phone in invalid data,
+Verify the feature of editing a user with non existent university,User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing university with non existent university name
+-Click on “editar”", It should not be possible to edit university,"The university is not updated, but a modal saying the update happened appear ",Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of editing a user with non existent gender,User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing gender with non existent gender 
+-Click on “editar”",It should not be possible to edit gender,It is not possible to update and the correct message is shown,
+"Verify the feature of editing password, email and cpf",User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing cpf, email and password
+-Click on “editar”", It should not be possible to edit those fields," It is possible to edit cpf and email, but not password",Evidence Artifacts - Par de jarro - test suite 2.pdf
+Verify the feature of editing when changes are not saved,User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing some random fields
+-Do not click on “editar” and check if changes are not saved",Changes should not be saved,Changes are not saved,
+Verify the feature of editing birthdate with future date,User must be logged in,"-Click on profile pic
+-Click on “Meu perfil”
+-Try editing birthdate with future date
+-Click on “editar”",Changes should not be saved,it is possible to edit birthdate to future date,Evidence Artifacts - Par de jarro - test suite 2.pdf
