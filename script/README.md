@@ -21,5 +21,5 @@ Script used to to call OpenAI completions API, using textual message and images 
 
 4. Run the script:
     ```bash
-    python3 ./script/chatCompletions/visionWithEncodedImage.py  
+    python3 ./script/chat_completions/visionWithEncodedImage.py  
     ```
