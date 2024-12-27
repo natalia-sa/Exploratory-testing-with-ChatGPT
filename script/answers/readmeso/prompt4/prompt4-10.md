@@ -18,7 +18,7 @@ readme1.png, readme2.png
 
 Here are some exploratory test cases for the Preview and Raw tabs in the README generator app:
 
-### Test Case 1 - SENSELESS
+### Test Case 1 - NONSENSICAL
 - **Description:** Verify that the Preview tab accurately displays changes made in the editor in real-time.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -28,7 +28,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   4. Observe the Preview tab for real-time updates.
 - **Expected results:** The changes made in the editor should immediately reflect in the Preview tab accurately.
 
-### Test Case 2 - SENSELESS
+### Test Case 2 - NONSENSICAL
 - **Description:** Test the behavior of the Raw tab when mixed content (text, images, and links) is added.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -38,7 +38,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   4. Switch to the Raw tab and inspect the display of the content.
 - **Expected results:** The Raw tab should correctly display the markdown of the mixed content without any formatting issues.
 
-### Test Case 3 - SENSELESS
+### Test Case 3 - NONSENSICAL
 - **Description:** Check for data consistency between the Editor, Preview, and Raw tabs when adding and removing sections rapidly.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -48,7 +48,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   4. Quickly remove the sections one by one, switching between tabs after each removal.
 - **Expected results:** Each tab should update consistently without delay, and no data loss or inconsistencies should be observed.
 
-### Test Case 4 - SENSELESS
+### Test Case 4 - NONSENSICAL
 - **Description:** Test the application's response to switching between multiple languages and verify translations in the Preview and Raw tabs.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -57,7 +57,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   3. Observe the Preview and Raw tabs after making each switch.
 - **Expected results:** The Preview and Raw tabs should display the correct translations for the selected language, and no elements should appear untranslated or broken.
 
-### Test Case 5 - SENSELESS
+### Test Case 5 - NONSENSICAL
 - **Description:** Verify that long texts, special characters, and emojis are handled correctly in the Preview and Raw tabs.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -66,7 +66,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   3. Switch to the Preview and Raw tabs and inspect the content display.
 - **Expected results:** The Preview tab should render the content correctly without truncation or misalignment, and the Raw tab should properly show the corresponding markdown code.
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 - **Description:** Assess the behavior of the Preview and Raw tabs under different screen sizes and resolutions.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -75,7 +75,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   3. Observe the rendering of content in the Preview and Raw tabs at each size.
 - **Expected results:** The content in both tabs should be responsive and displayed correctly regardless of screen size or resolution, and no overlapping or misalignment should be present.
 
-### Test Case 7 - SENSELESS
+### Test Case 7 - NONSENSICAL
 - **Description:** Check for any security vulnerabilities by attempting to inject malicious scripts into the editor and viewing them in the Preview and Raw tabs.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -84,7 +84,7 @@ Here are some exploratory test cases for the Preview and Raw tabs in the README 
   3. Switch to the Preview and Raw tabs and inspect the handling of the script.
 - **Expected results:** The application should sanitize the input and prevent script execution. The Preview and Raw tabs should display the script as text without executing it.
 
-### Test Case 8 - SENSELESS
+### Test Case 8 - NONSENSICAL
 - **Description:** Evaluate the stability of the application under prolonged use, focusing on the Preview and Raw tabs.
 - **Prerequisites:** The user should be logged into the README generator app.
 - **Steps:**
@@ -97,4 +97,4 @@ These exploratory test cases aim to cover a wide range of scenarios, focusing on
 
 
 0 bugs
-8 senseless
+8 NONSENSICAL

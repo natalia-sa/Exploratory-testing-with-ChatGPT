@@ -18,7 +18,7 @@ Certainly! Here are some exploratory test cases for the "ActivityDiary" app base
   3. Try to input invalid values such as negative numbers (-5), extremely large numbers (10000000), and non-numeric characters (abcd).
 - **Expected Results**: The app should validate the input and either reject it or prompt the user with a proper error message. The "Update period" should remain unchanged if the input is invalid.
 
-### Test Case 3 SENSELESS
+### Test Case 3 NONSENSICAL
 - **Description**: Test changing the "Picture Storage Folder" to a non-existent directory path.
 - **Prerequisites**: The app should be installed and opened to the Settings screen.
 - **Steps**:

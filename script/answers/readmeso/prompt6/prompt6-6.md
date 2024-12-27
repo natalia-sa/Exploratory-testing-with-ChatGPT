@@ -121,4 +121,4 @@ readme1.png, readme2.png, readme5.png
 - **Expected Results:** The app should handle the long title gracefully, either by truncating it or displaying an error that indicates the title is too long.
 
 2 bugs
-0 senseless
+0 NONSENSICAL

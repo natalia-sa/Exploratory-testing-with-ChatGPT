@@ -20,7 +20,7 @@
   4. Attempt to set the "Update distance" to an invalid value, such as a non-numeric string or negative number.
 - **Expected results:** The app should validate input and display an error message or prohibit setting invalid values for both "Update period" and "Update distance."
 
-### Test Case 3 SENSELESS
+### Test Case 3 NONSENSICAL
 - **Description:** Test the app response when the storage directory for the picture storage folder is not accessible.
 - **Prerequisites:** Ensure the app is installed, and the settings page shown in the screenshot is accessible. Restrict access to the directory `/ActivityDiary`.
 - **Steps:**

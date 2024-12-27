@@ -90,4 +90,4 @@
 - **Expected results:** The system should either save the bio up to a maximum character limit or display an error message if the text is too long.
 
 1 bug
-0 senseless
+0 NONSENSICAL

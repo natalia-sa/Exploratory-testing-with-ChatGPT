@@ -19,7 +19,7 @@ Sure, here are some exploratory test cases for "Ankidroid" with the provided GUI
      3. Click on the "OK" button.
    - **Expected results:** The app should display an error message indicating that the tag name cannot be empty.
 
-### Test Case 3 SENSELESS
+### Test Case 3 NONSENSICAL
 3. **Description:** Check behavior when tagging a note without saving it.
    - **Prerequisites:** Ankidroid app should be running, and the "Add note" screen should be open.
    - **Steps:**
@@ -59,7 +59,7 @@ Sure, here are some exploratory test cases for "Ankidroid" with the provided GUI
      3. Click "OK."
    - **Expected results:** The app should handle duplicates gracefully, either by informing the user or allowing it based on its design specifications.
 
-### Test Case 7 SENSELESS
+### Test Case 7 NONSENSICAL
 7. **Description:** Test the behavior with slow internet connection.
    - **Prerequisites:** Ankidroid app should be installed and running, with a slow internet connection.
    - **Steps:**

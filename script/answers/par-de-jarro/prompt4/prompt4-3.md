@@ -25,7 +25,7 @@
      4. Click on the Logout button.
    - **Expected results:** User is successfully logged out, with or without completed profile data, and redirected to the login page.
 
-4. **Test Logout Upon Network Disconnect** SENSELESS
+4. **Test Logout Upon Network Disconnect** NONSENSICAL
    - **Description:** Verify how the app handles logout when there is a network disconnection.
    - **Prerequisites:** User must be logged in and on the Profile Page.
    - **Steps:**
@@ -67,5 +67,5 @@
      3. Attempt to perform actions on the Profile Page from the second device/tab.
    - **Expected results:** Logging out from one device/tab should log out the user from the other device/tab as well, and actions attempted on the second device/tab should prompt for re-login.
 
-   1 senseless
+   1 NONSENSICAL
    0 bugs

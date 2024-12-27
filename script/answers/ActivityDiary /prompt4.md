@@ -38,7 +38,7 @@ Sure, here are some exploratory test cases for the "Location Service" feature in
   3. Change the Update period to an invalid value (e.g., 0 minutes or 999 minutes).
 - **Expected Results:** The app should validate the input and restrict it to a reasonable range, displaying an error message if the input is invalid.
 
-### Test Case 5: SENSELESS
+### Test Case 5: NONSENSICAL
 - **Description:**  Test the app's behavior when roaming internationally with Location Service enabled.
 - **Prerequisites:** Ensure the "ActivityDiary" app is installed and the device is set to a different country/region.
 - **Steps:**

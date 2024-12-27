@@ -54,7 +54,7 @@ readme1.png, readme2.png
   2. Click the "Reset" button.
 - **Expected results:** The content in the editor should reset to its default state for the selected section.
 
-### Test Case 005 - SENSELESS
+### Test Case 005 - NONSENSICAL
 - **Description:** Validate the functionality of the "Custom Section" button.
 - **Prerequisites:** Application is running and the sidebar is visible with all sections listed.
 - **Steps:**
@@ -108,5 +108,5 @@ readme1.png, readme2.png
   5. Switch between the two modes multiple times.
 - **Expected results:** Switching between "Preview" and "Raw" modes should update the editor's content view accordingly without any loss of data or formatting issues.
 
-1 senseless
+1 NONSENSICAL
 1 bugs

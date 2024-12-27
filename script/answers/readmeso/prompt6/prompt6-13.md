@@ -102,5 +102,5 @@ readme1.png, readme2.png
   3. Try to complete the support process by clicking the "Support" button.
 - **Expected results**: The application should display an appropriate error message indicating network issues.
 
-0 senseless
+0 NONSENSICAL
 0 bugs

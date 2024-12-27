@@ -43,7 +43,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 3 SENSELESS
+### Test Case 3 NONSENSICAL
 - **Description:** Edit an existing section's title to an empty string.
 - **Prerequisites:** Access to a Linux operating system with Firefox or Chrome browser.
 - **Steps:**
@@ -82,7 +82,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 6 - senseless
+### Test Case 6 - NONSENSICAL
 - **Description:** Test localization by changing the language and verifying section names translation.
 - **Prerequisites:** Access to a Linux operating system with Firefox or Chrome browser.
 - **Steps:**
@@ -106,7 +106,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 8 SENSELESS
+### Test Case 8 NONSENSICAL
 - **Description:** Verify behavior when network connection is lost.
 - **Prerequisites:** Access to a Linux operating system with Firefox or Chrome browser.
 - **Steps:**
@@ -142,4 +142,4 @@ readme1.png, readme2.png
 
 
 2 bugs
-3 senseless
+3 NONSENSICAL

@@ -54,7 +54,7 @@ Based on the given screenshot of the app "Par de Jarro," here are exploratory te
   1. Click on the profile link/icon.
 - Expected results: User’s profile page is displayed with all the user's details as shown in the screenshot.
 
-### 5. Profile Editing - SENSELESS
+### 5. Profile Editing - NONSENSICAL
 #### 5.1 Test Case: Edit User Profile with Valid Data
 - Description: Verify that a logged-in user can successfully edit their profile with valid data.
 - Prerequisites: User must be logged in.
@@ -65,7 +65,7 @@ Based on the given screenshot of the app "Par de Jarro," here are exploratory te
   4. Click on the "Save" button.
 - Expected results: The profile is successfully updated, and the changes are reflected on the profile page.
 
-#### 5.2 Test Case: Edit Profile with Invalid Data - SENSELESS
+#### 5.2 Test Case: Edit Profile with Invalid Data - NONSENSICAL
 - Description: Verify that the system prevents updating the profile with invalid data.
 - Prerequisites: User must be logged in.
 - Steps:
@@ -75,7 +75,7 @@ Based on the given screenshot of the app "Par de Jarro," here are exploratory te
   4. Click on the "Save" button.
 - Expected results: An error message is displayed indicating the invalid fields, and the profile is not updated.
 
-#### 5.3 Test Case: Attempt to Save Profile without Making Any Changes - SENSELESS
+#### 5.3 Test Case: Attempt to Save Profile without Making Any Changes - NONSENSICAL
 - Description: Verify the system's behavior when attempting to save the profile without making any changes.
 - Prerequisites: User must be logged in.
 - Steps:
@@ -87,5 +87,5 @@ Based on the given screenshot of the app "Par de Jarro," here are exploratory te
 These test cases cover basic functionality and ensure the app "Par de Jarro" operates as expected for these critical user actions.
 
 
-3 senseless
+3 NONSENSICAL
 2 bugs

@@ -63,7 +63,7 @@
   5. Click on the login button.
 - Expected results: The app should display a validation error indicating that the email format is incorrect.
 
-[7] - SENSELESS
+[7] - NONSENSICAL
 - Description: Login after resetting a forgotten password.
 - Prerequisites: A valid email associated with an account and access to the associated email inbox.
 - Steps:
@@ -77,7 +77,7 @@
   8. Click on the login button.
 - Expected results: The user should be able to log in successfully with the new password.
 
-[8] SENSELESS
+[8] NONSENSICAL
 - Description: Attempt to login while the network is offline.
 - Prerequisites: Network connection is turned off.
 - Steps:
@@ -87,7 +87,7 @@
   4. Click on the login button.
 - Expected results: The app should display an error message indicating there is no network connection and should not proceed with the login attempt.
 
-[9] - SENSELESS
+[9] - NONSENSICAL
 - Description: Check if "remember me" functionality saves login credentials.
 - Prerequisites: None.
 - Steps:
@@ -115,5 +115,5 @@
 
 These exploratory test cases cover a range of scenarios that could uncover bugs or unexpected behavior in the login functionality of the "Par de Jarro" app.
 
-3 senseless
+3 NONSENSICAL
 1 bug

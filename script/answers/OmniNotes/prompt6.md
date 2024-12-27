@@ -95,7 +95,7 @@ Sure! Here are the test cases for the Create Note feature in the Omni-Notes app:
   4. Enter a very long text into the "Conteúdo" (Content) field.
 - **Expected results**: The note is created and saved automatically with all the text correctly displayed in the note list.
 
-### Test Case 10 maybe senseless
+### Test Case 10 maybe NONSENSICAL
 - **Description**: Customize the appearance of the note with different fonts and colors.
 - **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
 - **Steps**:

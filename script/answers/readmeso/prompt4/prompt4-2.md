@@ -96,4 +96,4 @@ readme1.png, readme2.png
 By following these test cases, potential issues with the "Get Started" button in the README generator app can be identified and addressed.
 
 1 bug
-0 senseless
+0 NONSENSICAL

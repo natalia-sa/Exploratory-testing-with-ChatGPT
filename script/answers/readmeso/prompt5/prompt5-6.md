@@ -97,4 +97,4 @@ readme1.png, readme2.png, readme5.png
 
 
 2 bugs
-0 senseless
+0 NONSENSICAL

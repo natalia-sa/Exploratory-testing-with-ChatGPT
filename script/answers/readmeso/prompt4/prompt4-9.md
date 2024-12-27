@@ -102,7 +102,7 @@ Here are some exploratory test cases for the Reset Button feature in the README 
   4. Click on the "Reset" button.
 - **Expected results:** All sections should be cleared regardless of the theme, and the theme should remain in the dark mode.
 
-### Test Case 10 -  SENSELESS
+### Test Case 10 -  NONSENSICAL
 - **Description:** Verify that the Reset button clears unsaved changes.
 - **Prerequisites:** Add sections and make unsaved changes.
 - **Steps:**
@@ -115,4 +115,4 @@ These test cases cover a broad range of usual and unusual scenarios for the Rese
 
 
 0 bugs
-1 senseless
+1 NONSENSICAL

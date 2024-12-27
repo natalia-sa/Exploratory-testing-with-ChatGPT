@@ -104,7 +104,7 @@ Verify the behavior when switching tabs rapidly using Chrome on Linux.
 
 ---
 
-### Test Case 5 - SENSELESS
+### Test Case 5 - NONSENSICAL
 #### - Description:
 Verify if the content remains unsaved and accessible when switching between "Preview" and "Raw" views in Firefox on Linux.
 
@@ -128,7 +128,7 @@ Verify if the content remains unsaved and accessible when switching between "Pre
 
 ---
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 #### - Description:
 Verify if the content remains unsaved and accessible when switching between "Preview" and "Raw" views in Chrome on Linux.
 
@@ -237,5 +237,5 @@ Verify functionality when both the "Preview" and "Raw" tabs are left open withou
 - The application should remain stable and the content should remain intact after an extended period of inactivity.
 
 ---
-2 senseless
+2 NONSENSICAL
 0 bugs

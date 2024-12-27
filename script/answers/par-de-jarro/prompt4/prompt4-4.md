@@ -9,7 +9,7 @@ Sure, here are some exploratory test cases for the profile viewing feature of th
   3. Observe the fields: nome, email, telefone, CPF, data de nascimento, gênero, universidade, curso, and bio.
 - **Expected results**: All profile fields should display the correct and complete information.
 
-### Test Case 2 SENSELESS
+### Test Case 2 NONSENSICAL
 - **Description**: Check if the profile picture upload functionality works correctly.
 - **Prerequisites**: User must be logged in and have an existing profile.
 - **Steps**:
@@ -21,7 +21,7 @@ Sure, here are some exploratory test cases for the profile viewing feature of th
   6. Refresh the page and check if the new profile picture is displayed.
 - **Expected results**: The new profile picture should be saved and displayed correctly.
 
-### Test Case 3 SENSELESS
+### Test Case 3 NONSENSICAL
 - **Description**: Verify the profile update functionality with valid data.
 - **Prerequisites**: User must be logged in and have an existing profile.
 - **Steps**:
@@ -33,7 +33,7 @@ Sure, here are some exploratory test cases for the profile viewing feature of th
   6. Refresh the page and verify that the updated data is displayed correctly.
 - **Expected results**: The updated profile information should be saved and displayed correctly.
 
-### Test Case 4 SENSELESS
+### Test Case 4 NONSENSICAL
 - **Description**: Test the profile update functionality with invalid data.
 - **Prerequisites**: User must be logged in and have an existing profile.
 - **Steps**:
@@ -45,7 +45,7 @@ Sure, here are some exploratory test cases for the profile viewing feature of th
   6. Observe the system response.
 - **Expected results**: The system should display a validation error message indicating that the email format is invalid.
 
-### Test Case 5 SENSELESS
+### Test Case 5 NONSENSICAL
 - **Description**: Check for proper handling of special characters in profile fields.
 - **Prerequisites**: User must be logged in and have an existing profile.
 - **Steps**:
@@ -57,7 +57,7 @@ Sure, here are some exploratory test cases for the profile viewing feature of th
   6. Refresh the page and verify the handling/display of special characters.
 - **Expected results**: The special characters should be saved and displayed correctly without causing any layout or functionality issues.
 
-### Test Case 6 SENSELESS
+### Test Case 6 NONSENSICAL
 - **Description**: Verify the application's response when mandatory fields are left blank.
 - **Prerequisites**: User must be logged in and have an existing profile.
 - **Steps**:
@@ -81,5 +81,5 @@ Sure, here are some exploratory test cases for the profile viewing feature of th
    
 These exploratory test cases should help in uncovering potential bugs or failures in the profile viewing feature of the app.
 
-5 senseless
+5 NONSENSICAL
 0 bugs

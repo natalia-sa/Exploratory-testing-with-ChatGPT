@@ -16,7 +16,7 @@ Here are some exploratory test cases for the "View Profile" feature in the "Par 
   2. Verify that the profile picture is displayed correctly.
 - **Expected Results:** The profile picture is displayed without any distortions.
 
-### Test Case 3 SENSELESS
+### Test Case 3 NONSENSICAL
 - **Description:** Verify the "Editar" button functionality.
 - **Prerequisites:** The user must be logged in.
 - **Steps:** 
@@ -41,7 +41,7 @@ Here are some exploratory test cases for the "View Profile" feature in the "Par 
   2. Verify that special characters in all fields are displayed correctly.
 - **Expected Results:** All special characters (e.g., é, ã, ö, &, $, etc.) are displayed correctly without any encoding issues.
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 - **Description:** Verify profile details after changing the language setting.
 - **Prerequisites:** The app should have a multilingual feature and preferred language set to English.
 - **Steps:** 
@@ -85,5 +85,5 @@ Here are some exploratory test cases for the "View Profile" feature in the "Par 
 
 Each test case ensures the quality and correctness of the "View Profile" feature, covering various scenarios and edge cases to uncover potential bugs.
 
-2 senseless
+2 NONSENSICAL
 1 bug

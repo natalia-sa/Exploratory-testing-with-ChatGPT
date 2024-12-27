@@ -64,7 +64,7 @@ Here are some exploratory testing cases for the "Section delete" functionality i
 
 ---
 
-### Test Case 5 - SENSELESS
+### Test Case 5 - NONSENSICAL
 - **Description:** Test deletion functionality with an unsaved README.
 - **Prerequisites:** Add one or more sections without saving/exporting the README.
 - **Steps:**
@@ -75,7 +75,7 @@ Here are some exploratory testing cases for the "Section delete" functionality i
 
 ---
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 - **Description:** Try to delete a non-existent section (Edge case).
 - **Prerequisites:** One section added and immediately deleted.
 - **Steps:**
@@ -98,7 +98,7 @@ Here are some exploratory testing cases for the "Section delete" functionality i
 
 ---
 
-### Test Case 8 - SENSELESS
+### Test Case 8 - NONSENSICAL
 - **Description:** Validate undo functionality (if available) after deleting a section.
 - **Prerequisites:** Ensure at least one section is added.
 - **Steps:**
@@ -113,4 +113,4 @@ Here are some exploratory testing cases for the "Section delete" functionality i
 These test cases cover normal, edge, and exceptional scenarios surrounding the section deletion functionality to uncover potential bugs and ensure robustness of the app.
 
 0 bug
-3 senseless
+3 NONSENSICAL

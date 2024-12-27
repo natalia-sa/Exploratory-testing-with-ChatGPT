@@ -73,7 +73,7 @@ Sure, I'll provide a series of exploratory test cases for the Section edit funct
 
 ---
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 - **Description:** Undo changes made to a section.
 - **Prerequisites:** At least one section is added with edits made to its content.
 - **Steps:**
@@ -131,4 +131,4 @@ By following these test cases, you will be able to thoroughly explore the sectio
 
 
 0 bugs
-1 senseless
+1 NONSENSICAL

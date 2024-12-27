@@ -110,4 +110,4 @@ Certainly! Here are some detailed test cases based on the screenshots you provid
 These test cases should help ensure the robustness of the language selection functionality in the README generator app.
 
 3 bugs
-0 senseless
+0 NONSENSICAL

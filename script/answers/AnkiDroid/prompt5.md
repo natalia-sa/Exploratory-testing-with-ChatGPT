@@ -82,7 +82,7 @@ Certainly! Here are some exploratory test cases for the "Add Note" feature in An
 2. Observe the response.
 **-Expected results:** The app should display an error message that the image format is unsupported and prevent the note from being saved with the unsupported image.
 
-### Test Case 10 SENSELESS
+### Test Case 10 NONSENSICAL
 **-Description:** Verifying the behavior of the "Cancel" button while adding a note.
 **-Prerequisites:** The app is launched and on the "Add Note" screen.
 **-Steps:**

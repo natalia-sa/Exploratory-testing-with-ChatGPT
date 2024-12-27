@@ -106,7 +106,7 @@ Certainly! Below are exploratory test cases for the login feature of the "Par de
 
 ---
 
-**Test Case 9** - SENSELESS
+**Test Case 9** - NONSENSICAL
 - **Description:** Test the login functionality on different network speeds (e.g., 3G, 4G, Wi-Fi).
 - **Prerequisites:** The application must be installed.
 - **Steps:**
@@ -135,4 +135,4 @@ Certainly! Below are exploratory test cases for the login feature of the "Par de
 These test cases should help uncover potential issues with the login functionality and ensure a robust, user-friendly experience.
 
 0 bugs
-1 senseless
+1 NONSENSICAL

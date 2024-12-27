@@ -137,4 +137,4 @@ readme1.png, readme2.png
 - **Expected Results:** The search functionality should return relevant sections even when the app is in a language other than English.
 
 0 bugs
-0 senseless
+0 NONSENSICAL

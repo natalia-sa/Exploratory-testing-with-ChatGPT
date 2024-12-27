@@ -59,7 +59,7 @@ readme1.png, readme2.png
   2. Locate and click the "Sponsor" button.
 - **Expected results**: The sponsor button should work correctly even when an ad-blocker is enabled.
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 - **Description**: Functionality of the sponsor button after logging in/logging out.
 - **Prerequisites**: User account available for login, and the user is on the homepage.
 - **Steps**:
@@ -108,4 +108,4 @@ readme1.png, readme2.png
 These test cases cover both normal and unusual flows to ensure the "Sponsor" button feature in the README generator app is robust and functional under various scenarios.
 
 0 bugs
-1 senseless
+1 NONSENSICAL

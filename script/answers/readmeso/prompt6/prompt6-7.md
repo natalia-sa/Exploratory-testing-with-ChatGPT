@@ -59,7 +59,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 005 - senseless
+### Test Case 005 - NONSENSICAL
 - **Description:** Verify Reset functionality with unsaved changes in the editor.
 - **Prerequisites:** The user has unsaved changes in the Readme editor.
 - **Steps:**
@@ -69,7 +69,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 006 - senseless
+### Test Case 006 - NONSENSICAL
 - **Description:** Verify Reset button functionality after switching between sections without saving.
 - **Prerequisites:** The user is on the Readme editor page.
 - **Steps:**
@@ -120,4 +120,4 @@ readme1.png, readme2.png
 
 
 0 bugs
-2 senseless
+2 NONSENSICAL

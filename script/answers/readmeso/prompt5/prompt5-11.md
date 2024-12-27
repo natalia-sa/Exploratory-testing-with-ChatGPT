@@ -138,4 +138,4 @@ readme1.png, readme2.png, readme4.png
 
 
   1 bugs
-  0 senseless
+  0 NONSENSICAL

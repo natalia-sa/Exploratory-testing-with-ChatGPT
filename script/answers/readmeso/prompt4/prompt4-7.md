@@ -67,7 +67,7 @@ The app should be launched, and the user should be on the README editor page.
 #### Expected Results:
 The app should correctly switch languages without losing any entered data. The editor should reflect the change in language seamlessly.
 
-### Test Case 5 - SENSELESS
+### Test Case 5 - NONSENSICAL
 #### Description:
 Test editing a section with very large text inputs.
 #### Prerequisites:
@@ -79,7 +79,7 @@ The app should be launched, and the user should be on the README editor page.
 #### Expected Results:
 The app should handle the large input without slowing down significantly, crashing, or cutting off the text. The full input should be saved and displayed correctly in the preview.
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 #### Description:
 Test for potential cross-site scripting (XSS) vulnerabilities.
 #### Prerequisites:
@@ -117,4 +117,4 @@ The app should be responsive to different screen resolutions, and all controls s
 These test cases aim to ensure the reliability of the Editing Sections feature under various conditions.
 
 3 bugs
-2 senseless
+2 NONSENSICAL

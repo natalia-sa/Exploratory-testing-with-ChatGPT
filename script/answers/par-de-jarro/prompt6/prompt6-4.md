@@ -18,7 +18,7 @@ Sure, here are some exploratory test cases for the "View Profile" feature:
   3. Check if the profile picture is displayed correctly above the user's name.
 - **Expected results:** Profile picture is displayed correctly without distortion or errors.
 
-### Test Case 3 -  SENSELESS
+### Test Case 3 -  NONSENSICAL
 - **Description:** Test that the "Edit" button navigates to the correct edit profile page.
 - **Prerequisites:** User is logged in.
 - **Steps:** 
@@ -57,7 +57,7 @@ Sure, here are some exploratory test cases for the "View Profile" feature:
   3. Attempt to click and edit the CPF field.
 - **Expected results:** CPF field is not editable and remains read-only.
 
-### Test Case 7 - SENSELESS
+### Test Case 7 - NONSENSICAL
 - **Description:** Verify that the page behaves correctly with slow network conditions.
 - **Prerequisites:** User is logged in, network throttling is possible.
 - **Steps:** 
@@ -68,7 +68,7 @@ Sure, here are some exploratory test cases for the "View Profile" feature:
   5. Observe the page load behavior and check if elements load correctly.
 - **Expected results:** Although the page loads slower, all elements should eventually load correctly without breaking.
 
-### Test Case 8 - SENSELESS
+### Test Case 8 - NONSENSICAL
 - **Description:** Validate that appropriate error messages are displayed when the user profile data fails to load.
 - **Prerequisites:** User is logged in but the back-end service simulating server downtime.
 - **Steps:** 

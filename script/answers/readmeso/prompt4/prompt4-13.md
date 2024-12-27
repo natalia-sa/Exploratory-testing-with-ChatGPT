@@ -26,7 +26,7 @@ readme1.png, readme7.png
   4. Observe the appearance of the Completion Modal.
 - **Expected results**: The Completion Modal should appear, showing a message that the README has been generated, with options to reach out on Twitter and to sponsor.
 
-### Test Case 002 - SENSELESS
+### Test Case 002 - NONSENSICAL
 - **Description**: Verify the Completion Modal handles unsupported characters.
 - **Prerequisites**: The user should create a README with unsupported characters in the sections.
 - **Steps**:
@@ -89,5 +89,5 @@ readme1.png, readme7.png
 - **Expected results**: The Completion Modal should be fully responsive, correctly displaying on all screen sizes and devices without layout issues.
 
 
-1 senseless
+1 NONSENSICAL
 0 bugs

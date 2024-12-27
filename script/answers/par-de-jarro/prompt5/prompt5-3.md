@@ -12,7 +12,7 @@ Sure, here are a set of test cases for the Logout feature in the app “Par de J
 
 ---
 
-**Test Case 2** - SENSELESS
+**Test Case 2** - NONSENSICAL
 - **Description:** Verify that the logout option is available and clickable on every main user interface page.
 - **Prerequisites:** User must be logged in and navigate through various main pages.
 - **Steps:**
@@ -53,7 +53,7 @@ Sure, here are a set of test cases for the Logout feature in the app “Par de J
 
 ---
 
-**Test Case 6** SENSELESS
+**Test Case 6** NONSENSICAL
 - **Description:** Verify logout functionality in case of network failure during logout process.
 - **Prerequisites:** User must be logged in.
 - **Steps:**
@@ -88,5 +88,5 @@ Sure, here are a set of test cases for the Logout feature in the app “Par de J
 
 These test cases aim to cover different potential scenarios, including edge cases, to ensure the logout functionality works correctly under various conditions.
 
-2 senseless
+2 NONSENSICAL
 0 bugs

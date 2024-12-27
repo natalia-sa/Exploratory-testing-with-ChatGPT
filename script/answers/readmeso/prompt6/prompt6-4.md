@@ -111,4 +111,4 @@ These test cases aim to ensure comprehensive coverage of various functionalities
 
 
 1 bug 
-0 senseless
+0 NONSENSICAL

@@ -77,4 +77,4 @@ Certainly! Below are some exploratory test cases for the "edit profile" feature 
 By following these exploratory test cases, the robustness, security, and usability of the "edit profile" feature in "Par de Jarro" can be thoroughly evaluated.
 
 2 bugs
-0 senseless
+0 NONSENSICAL

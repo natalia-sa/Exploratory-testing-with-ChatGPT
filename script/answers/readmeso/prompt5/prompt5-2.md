@@ -84,4 +84,4 @@ Sure, here are some test cases to validate the functionality of the "Get Started
 These test cases cover a range of scenarios to ensure the robustness of the "Get Started" button's functionality.
 
 0 bugs
-0 senseless
+0 NONSENSICAL

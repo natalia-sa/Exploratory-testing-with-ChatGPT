@@ -95,4 +95,4 @@ readme2.png, readme6.png
 These exploratory tests cover a range of unusual and potentially disruptive workflow scenarios aimed at ensuring the Support Modal is robust against common issues and security vulnerabilities.
 
 0 bugs
-0 senseless
+0 NONSENSICAL

@@ -50,7 +50,7 @@ Certainly! Here are some exploratory test cases for the "Register new user" feat
 
 ---
 
-### [Test 005] - SENSELESS
+### [Test 005] - NONSENSICAL
 - **Description:** Register with a weak password.
 - **Prerequisites:** The registration page is open.
 - **Steps:**
@@ -61,7 +61,7 @@ Certainly! Here are some exploratory test cases for the "Register new user" feat
 
 ---
 
-### [Test 006] - SENSELESS
+### [Test 006] - NONSENSICAL
 - **Description:** Register with mismatching "Senha" and "Confirmar Senha" fields.
 - **Prerequisites:** The registration page is open.
 - **Steps:**
@@ -122,4 +122,4 @@ Certainly! Here are some exploratory test cases for the "Register new user" feat
 These exploratory test cases aim to uncover potential bugs and ensure the robustness of the user registration feature by testing unusual and edge cases.
 
 3 bugs
-2 senseless
+2 NONSENSICAL

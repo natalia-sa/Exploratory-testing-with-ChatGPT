@@ -1,4 +1,4 @@
-# Test Case 1: New User Registration with Valid Inputs - SENSELESS, no field birthdate
+# Test Case 1: New User Registration with Valid Inputs - NONSENSICAL, no field birthdate
 - **Description:** This test case verifies new user registration using valid inputs.
 - **Prerequisites:** None
 - **Steps:**
@@ -88,4 +88,4 @@
 - **Expected results:** The app should handle multiple failed attempts appropriately; potential security measures such as CAPTCHA or account lockout should be in place after several failed login attempts.
 
 3 bugs
-1 senseless
+1 NONSENSICAL

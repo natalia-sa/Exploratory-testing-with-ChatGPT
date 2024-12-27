@@ -92,7 +92,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 8 SENSELESS
+### Test Case 8 NONSENSICAL
 - **Description**: Verify the appearance and functionality of the "Get Started" button in different themes (if applicable).
 - **Prerequisites**: Access to readme.so in a Linux environment using Firefox or Chrome.
 - **Steps**:
@@ -124,5 +124,5 @@ readme1.png, readme2.png
   3. Press the "Enter" key or "Spacebar" to activate the button.
 - **Expected Results**: The application should navigate to the editor page when the button is activated using the keyboard.
 
-1 senseless
+1 NONSENSICAL
 1 bugs

@@ -24,7 +24,7 @@ readme1.png, readme2.png, readme4.png
      2. Click on the Toggle button rapidly (at least 10 times within 5 seconds).
    - **Expected Results:** The app should switch between Day and Night modes correctly without any lag, graphical glitches, or crashes.
 
-2. **Test Number:** E02 - SENSELESS
+2. **Test Number:** E02 - NONSENSICAL
    - **Description:** Toggling Day/Night Mode during different stages of editing the README.
    - **Prerequisites:** App is loaded, and a section is being edited.
    - **Steps:**
@@ -106,4 +106,4 @@ readme1.png, readme2.png, readme4.png
 
 
     0 bugs
-    1 senseless
+    1 NONSENSICAL

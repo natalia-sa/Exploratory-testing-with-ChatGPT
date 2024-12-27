@@ -79,7 +79,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 6 - SENSELESS
+### Test Case 6 - NONSENSICAL
 - **Description**: Verify the behavior of the "Sponsor" button with the browser's back and forward navigation.
 - **Prerequisites**: The Readme Generator app is open in Chrome or Firefox on a Linux system.
 - **Steps**:
@@ -105,6 +105,6 @@ readme1.png, readme2.png
 
 Each test case aims to uncover any potential issues or edge cases that might affect the usability and functionality of the "Sponsor" button.
 
-1 senseless
+1 NONSENSICAL
 0 bugs
 

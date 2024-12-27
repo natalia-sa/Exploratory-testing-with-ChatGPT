@@ -56,7 +56,7 @@ Sure! Below are some exploratory test cases for the "Add Note" feature in the An
   4. Tap the save/checkmark icon on the top right corner.
 - Expected results: The app should correctly handle the switch, either by clearing unneeded fields accordingly or preserving relevant input data as per the new card type.
 
-7. SENSELESS
+7. NONSENSICAL
 - Description: Attempt to add a note without an active internet connection
 - Prerequisites: The app should be open, and user should be on the 'Add Note' screen; internet connection should be disabled
 - Steps:

@@ -83,7 +83,7 @@ Here are some exploratory test cases for the Login feature of the "Par de Jarro"
   4. Click on the visibility toggle icon (if available).
 -Expected results: The password entered should toggle between masked (hidden) and unmasked (visible).
 
-### Test Case 8 - SENSELESS
+### Test Case 8 - NONSENSICAL
 -Test Number: 008 
 -Description: Verify login button is disabled when fields are empty
 -Prerequisites: N/A

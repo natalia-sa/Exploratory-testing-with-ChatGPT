@@ -16,7 +16,7 @@ readme1.png, readme2.png
 
 ### Answer
 
-### Test Case 1: SENSELESS
+### Test Case 1: NONSENSICAL
 - **Description:** Attempt to add the same section multiple times.
 - **Prerequisites:** The application should be open, and the user should be on the section selection screen.
 - **Steps:**
@@ -89,4 +89,4 @@ readme1.png, readme2.png
 Testing with these exploratory cases should help identify potential bugs and ensure robust functionality for the Section Selection feature in the README generator app.
 
 1 bugs
-1 senseless
+1 NONSENSICAL

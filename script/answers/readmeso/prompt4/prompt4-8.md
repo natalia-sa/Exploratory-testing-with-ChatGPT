@@ -104,7 +104,7 @@ Here are some exploratory test cases for the Deleting Sections feature in the RE
   4. Observe if any confirmation prompt appears before deletion.
 - **Expected results:** The section should be deleted immediately without any confirmation prompt. If there is a prompt, the bug is identified.
 
-### Test Case 10 -  SENSELESS
+### Test Case 10 -  NONSENSICAL
 - **Description:** Attempt to delete a section while multiple sections are expanded.
 - **Prerequisites:** Access to the README generator app with multiple sections expanded.
 - **Steps:**
@@ -114,4 +114,4 @@ Here are some exploratory test cases for the Deleting Sections feature in the RE
 - **Expected results:** The selected section is deleted without affecting the state (expanded/collapsed) of the other sections.
 
 1 bug
-1 senseless
+1 NONSENSICAL

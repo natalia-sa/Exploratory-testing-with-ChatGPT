@@ -71,7 +71,7 @@ Sure! Below are some exploratory test cases for the "Register New User" feature 
 
 ---
 
-### Test Case 5 SENSELESS
+### Test Case 5 NONSENSICAL
 - **Description:** Test registration with password under minimum length
 - **Prerequisites:** None
 - **Steps:**
@@ -124,4 +124,4 @@ Sure! Below are some exploratory test cases for the "Register New User" feature 
 These test cases cover potential edge cases, unusual flows, and possible bugs for the "Register New User" feature in the “Par de Jarro” app.
 
 3 bugs
-1 senseless
+1 NONSENSICAL

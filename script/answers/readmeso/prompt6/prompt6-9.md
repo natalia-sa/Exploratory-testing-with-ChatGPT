@@ -71,7 +71,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 6 - senseless
+### Test Case 6 - NONSENSICAL
 - **Description:** Verify deleting a section when no section is added initially.
 - **Prerequisites:** No section should be added initially.
 - **Steps:**
@@ -81,7 +81,7 @@ readme1.png, readme2.png
 
 ---
 
-### Test Case 7 - senseless
+### Test Case 7 - NONSENSICAL
 - **Description:** Verify undo functionality after deleting a section.
 - **Prerequisites:** A section added to the README, with at least one edit.
 - **Steps:**
@@ -129,4 +129,4 @@ readme1.png, readme2.png
 
 
 0 bugs
-2 senseless
+2 NONSENSICAL

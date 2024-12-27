@@ -46,7 +46,7 @@ Sure! Below are some test cases for the "Register new user" feature of the “Pa
   3. Click on the "Criar Conta" button.
 - **Expected results:** The application should display a validation message indicating the email format is incorrect.
 
-### Test Case 004 SENSELESS
+### Test Case 004 NONSENSICAL
 - **Description:** Register a new user with a weak password.
 - **Prerequisites:** App is running locally on a Linux machine.
 - **Steps:**

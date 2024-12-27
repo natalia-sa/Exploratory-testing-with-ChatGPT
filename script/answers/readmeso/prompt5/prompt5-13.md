@@ -140,4 +140,4 @@ readme1.png, readme2.png, readme6.png
 Running these tests should cover most of the potential issues and ensure that the "Buy me a coffee" functionality works smoothly for end users.
 
 0 bugs
-0 senseless
+0 NONSENSICAL

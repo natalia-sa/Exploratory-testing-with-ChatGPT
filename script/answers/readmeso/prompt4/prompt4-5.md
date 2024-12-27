@@ -20,7 +20,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 1** SENSELESS
+**Test Case 1** NONSENSICAL
 - **Description:** Add a custom section without providing a title or content.
 - **Prerequisites:** Access to the README generator app.
 - **Steps:** 
@@ -33,7 +33,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 2** SENSELESS
+**Test Case 2** NONSENSICAL
 - **Description:** Add a custom section with an excessively long title.
 - **Prerequisites:** Access to the README generator app.
 - **Steps:** 
@@ -47,7 +47,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 3** - SENSELESS
+**Test Case 3** - NONSENSICAL
 - **Description:** Add a custom section containing HTML or script tags.
 - **Prerequisites:** Access to the README generator app.
 - **Steps:** 
@@ -61,7 +61,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 4** - SENSELESS
+**Test Case 4** - NONSENSICAL
 - **Description:** Add multiple custom sections in quick succession to check for concurrency issues.
 - **Prerequisites:** Access to the README generator app.
 - **Steps:** 
@@ -74,7 +74,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 5** SENSELESS
+**Test Case 5** NONSENSICAL
 - **Description:** Attempt to add a custom section with special characters and emojis in the title and content.
 - **Prerequisites:** Access to the README generator app.
 - **Steps:** 
@@ -88,7 +88,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 6**  - SENSELESS
+**Test Case 6**  - NONSENSICAL
 - **Description:** Edit an existing custom section to contain conflicting information with another section (e.g., duplicate marker IDs).
 - **Prerequisites:** Access to the README generator app.
 - **Steps:** 
@@ -101,7 +101,7 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 
 ---
 
-**Test Case 7** SENSELESS
+**Test Case 7** NONSENSICAL
 - **Description:** Test the custom section feature in different languages to verify localization support.
 - **Prerequisites:** Access to the README generator app. Set up with multiple language options enabled.
 - **Steps:** 
@@ -119,4 +119,4 @@ Certainly! Here are exploratory test cases for the "Add Custom Section" feature 
 These test cases should help you identify and address various potential issues, enhancing the reliability and security of the "Add Custom Section" feature.
 
 0 bugs
-7 senseless
+7 NONSENSICAL

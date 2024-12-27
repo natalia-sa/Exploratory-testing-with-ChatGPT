@@ -1,6 +1,6 @@
 Here are some exploratory test cases for the "Par de Jarro" app based on the given features:
 
-### Test Case 1 - SENSELESS, no field birth date
+### Test Case 1 - NONSENSICAL, no field birth date
 - **Description:** New user registration with valid details
 - **Prerequisites:** Ensure the app is accessible, and the registration page is available
 - **Steps:**
@@ -51,7 +51,7 @@ Here are some exploratory test cases for the "Par de Jarro" app based on the giv
   1. Navigate to the user's profile page.
 - **Expected results:** The user's profile information should be displayed correctly as shown in the provided screenshot.
 
-### Test Case 7 - SENSELESS
+### Test Case 7 - NONSENSICAL
 - **Description:** Profile editing and saving
 - **Prerequisites:** Ensure the user is logged in
 - **Steps:**
@@ -61,7 +61,7 @@ Here are some exploratory test cases for the "Par de Jarro" app based on the giv
   4. Click on the "Save" button.
 - **Expected results:** The changes should be successfully saved, and the profile page should reflect the updated information.
 
-### Test Case 8 - SENSELESS
+### Test Case 8 - NONSENSICAL
 - **Description:** Boundary testing on input fields (e.g., Name, Email)
 - **Prerequisites:** Ensure the app's registration or profile editing page is available.
 - **Steps:**
@@ -90,5 +90,5 @@ Here are some exploratory test cases for the "Par de Jarro" app based on the giv
 
 These test cases should help identify potential bugs and ensure the functionality of the "Par de Jarro" app across various scenarios.
 
-3 senseless
+3 NONSENSICAL
 2 bugs

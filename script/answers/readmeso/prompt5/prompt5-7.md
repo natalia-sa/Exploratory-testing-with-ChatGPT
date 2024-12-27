@@ -75,7 +75,7 @@ Certainly! Here are a few test cases for the Reset button functionality for the 
   4. Click the 'Reset' button.
 - **Expected Results:** All fields should be cleared, and the README editor should remain in the selected non-English language.
 
-### Test Case 7 - senseless
+### Test Case 7 - NONSENSICAL
 - **Description:** Verify the Reset button functionality in an unsaved state.
 - **Prerequisites:** Access to the README generator app with data entered but not yet downloaded or saved.
 - **Steps:**
@@ -101,4 +101,4 @@ Certainly! Here are a few test cases for the Reset button functionality for the 
 
 
     0 bugs
-    1 senseless
+    1 NONSENSICAL

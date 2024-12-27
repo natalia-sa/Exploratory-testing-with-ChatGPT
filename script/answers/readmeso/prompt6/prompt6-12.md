@@ -137,4 +137,4 @@ readme1.png, readme2.png
 These test cases should help uncover potential issues with the download functionality in various usage scenarios.
 
 0 bugs
-0 senseless
+0 NONSENSICAL

@@ -128,4 +128,4 @@ readme1.png, readme2.png, readme7.png
 These test cases are designed to cover various aspects of the Readme Generated confirmation modal, including standard and edge cases, to ensure a robust user experience.
 
 0 bugs
-0 senseless
+0 NONSENSICAL

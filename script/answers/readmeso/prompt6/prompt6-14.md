@@ -87,5 +87,5 @@ readme1.png, readme2.png
   3. Quickly, before dismissing the modal, try to generate another README.
 - **Expected results**: The app should handle multiple README generation attempts gracefully, either by queuing them or displaying a suitable message. Only one modal should be displayed at any time.
 
-0 senseless
+0 NONSENSICAL
 0 bugs

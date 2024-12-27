@@ -137,4 +137,4 @@ readme1.png, readme2.png
 - **Expected Results**: The dropdown menu should be scrollable, and all languages should be accessible for selection.
 
 2 bugs
-0 senseless
+0 NONSENSICAL

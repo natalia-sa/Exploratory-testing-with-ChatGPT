@@ -97,5 +97,5 @@ Sure! Below are several test cases structured to test the "Sponsor" button funct
 These tests target various usage scenarios, including typical, edge, and unusual cases, providing comprehensive coverage for the "Sponsor" button functionality.
 
 1 bugs
-0 senseless
+0 NONSENSICAL
 

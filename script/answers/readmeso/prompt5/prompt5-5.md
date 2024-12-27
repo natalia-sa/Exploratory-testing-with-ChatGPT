@@ -90,7 +90,7 @@ Here are several test cases for the section search functionality in the README g
   3. Observe the search results for each input.
 - **Expected results:** The search results should update in real-time to reflect the current input accurately without delay or freezing.
 
-### Test Case 9 - senseless
+### Test Case 9 - NONSENSICAL
 - **Description:** Test search functionality after adding and removing multiple sections.
 - **Prerequisites:** The app is opened, and the user is on the editor page.
 - **Steps:**
@@ -112,4 +112,4 @@ By following these test cases, you can comprehensively test the section search f
 
 
 0 bugs
-1 senseless
+1 NONSENSICAL

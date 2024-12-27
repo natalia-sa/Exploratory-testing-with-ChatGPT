@@ -31,7 +31,7 @@ readme1.png, readme2.png, readme3.png
 
 ---
 
-### Test Case 2 - SENSELESS
+### Test Case 2 - NONSENSICAL
 - **Description:** Toggle between Preview and Raw view immediately after making changes.
 - **Prerequisites:** App is opened at the /editor URL, section is editable, and content can be modified.
 - **Steps:**
@@ -117,5 +117,5 @@ readme1.png, readme2.png, readme3.png
 Feel free to refine these test cases based on the application's specific behavior and requirements observed during the testing session.
 
 0 bugs
-1 senseless
+1 NONSENSICAL
 

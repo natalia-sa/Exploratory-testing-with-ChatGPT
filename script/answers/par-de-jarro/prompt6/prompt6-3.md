@@ -56,7 +56,7 @@ Sure! Here are some exploratory test cases for the Logout feature in the app "Pa
   6. Click the "Deslogar" (Logout) button and ensure you are redirected to the login page.
 - **Expected results:** The logout functionality works correctly in both Firefox and Chrome, logging the user out and redirecting them to the login page.
 
-### Test Case 7 - SENSELESS
+### Test Case 7 - NONSENSICAL
 - **Description:** Verify the handling of forced logout due to an invalid session.
 - **Prerequisites:** User must be logged in. Simulate an invalid session by deleting session cookies.
 - **Steps:**
