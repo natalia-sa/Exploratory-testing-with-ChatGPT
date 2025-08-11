@@ -9,9 +9,25 @@ api_key = os.getenv('OPENAI_API_KEY')
 
 functionalities = [
     {
-        "nome": "Feature name",
-        "imagens": ["./images/img.png"]
+        "nome": "Register new user",
+        "imagens": ["./images/par/par3.png", "./images/par/par4.png", "./images/par/par2.png"]
     },
+    {
+        "nome": "Login",
+        "imagens": ["./images/par/par3.png", "./images/par/par4.png", "./images/par/par2.png"]
+    },
+        {
+        "nome": "Logout",
+        "imagens": ["./images/par/par7.png", "./images/par/par4.png"]
+    },
+            {
+        "nome": "View profile",
+        "imagens": ["./images/par/par1.png", "./images/par/par6.png"]
+    },
+                {
+        "nome": "Edit profile",
+        "imagens": ["./images/par/par6.png"]
+    }
 ]
 
 def encode_image(image_path):
@@ -30,11 +46,23 @@ headers = {
 }
 
 for func in functionalities:
-    textual_message = f"""From the point of view of a tester, give me exploratory test cases to the 
-    {func['nome']} functionality ..."""
+    textual_message = f"""From the point of view of a tester, give me exploratory test cases to the
+{func['nome']} feature in the Par de jarro app.
+This is a roommate-sharing app. It connects to a database that records registered users if the registration is successfully completed.
+Please consider that to carry out these tests you only have access to the Linux operating system, and the Firefox and Chrome browsers.
+Consider unusual flows, try to find possible bugs, failures,
+security issues, etc.
+I will provide screenshots of the app GUI.
+The test cases should follow the structure below:
+- test number
+- Description: The test case description
+- Prerequisites: Specifies the conditions that must be met
+before executing the test steps
+- Steps: Enumerated steps to execute the test
+- Expected results: The expected test results"""
 
     image_paths = func["imagens"]
-    answer_path = f"./answers/{func['nome'].replace(' ', '_').lower()}.md"
+    answer_path = f"./answers/par-de-jarro/retest-6/{func['nome'].replace(' ', '_').lower()}.md"
 
     payload = {
         "model": "gpt-4o-2024-05-13",

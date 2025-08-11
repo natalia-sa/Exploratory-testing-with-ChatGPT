@@ -58,7 +58,7 @@ before executing the test steps
 
 # Prompt 5
 
-From the point of view of a tester, give me test cases to the
+From the point of view of a tester, give me exploratory test cases to the
 [FEATURE_NAME] in the [APP_NAME] app.
 [APP_DESCRIPTION].
 Consider unusual flows, try to find possible bugs, failures,
@@ -74,7 +74,7 @@ before executing the test steps
 
 # Prompt 6
 
-From the point of view of a tester, give me test cases to the
+From the point of view of a tester, give me exploratory test cases to the
 [FEATURE_NAME] in the [APP_NAME] app.
 [ENVIRONMENT_DESCRIPTION].
 [APP_DESCRIPTION].
