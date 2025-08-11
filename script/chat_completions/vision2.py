@@ -9,24 +9,8 @@ api_key = os.getenv('OPENAI_API_KEY')
 
 functionalities = [
     {
-        "nome": "Register new user",
-        "imagens": ["./images/par/par3.png", "./images/par/par4.png", "./images/par/par2.png"]
-    },
-    {
-        "nome": "Login",
-        "imagens": ["./images/par/par3.png", "./images/par/par4.png", "./images/par/par2.png"]
-    },
-        {
-        "nome": "Logout",
-        "imagens": ["./images/par/par7.png", "./images/par/par4.png"]
-    },
-            {
-        "nome": "View profile",
-        "imagens": ["./images/par/par1.png", "./images/par/par6.png"]
-    },
-                {
-        "nome": "Edit profile",
-        "imagens": ["./images/par/par6.png"]
+        "nome": "Create Text Note",
+        "imagens": ["./images/note/note2.png","./images/note/note4.png"]
     }
 ]
 
@@ -47,9 +31,12 @@ headers = {
 
 for func in functionalities:
     textual_message = f"""From the point of view of a tester, give me exploratory test cases to the
-{func['nome']} feature in the Par de jarro app.
-This is a roommate-sharing app. It connects to a database that records registered users if the registration is successfully completed.
-Please consider that to carry out these tests you only have access to the Linux operating system, and the Firefox and Chrome browsers.
+{func['nome']} feature in the Omni-notes app.
+This app is a note taking application . Please consider that to carry out these tests you only have access to an android cell phone. 
+To use this app it is not necessary to create an account or log in, 
+therefore it is not necessary to include tests related to this. The app is in portuguese, 
+but you must answer in english. Notes are already saved after filling in any of the form fields, 
+there is no need to click on any button to save them. Also pass throug each form of attachment
 Consider unusual flows, try to find possible bugs, failures,
 security issues, etc.
 I will provide screenshots of the app GUI.
@@ -62,7 +49,7 @@ before executing the test steps
 - Expected results: The expected test results"""
 
     image_paths = func["imagens"]
-    answer_path = f"./answers/par-de-jarro/retest-6/{func['nome'].replace(' ', '_').lower()}.md"
+    answer_path = f"./answers/OmniNotes/retest-6/prompt6-2.md"
 
     payload = {
         "model": "gpt-4o-2024-05-13",

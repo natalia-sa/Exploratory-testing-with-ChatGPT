@@ -1,107 +1,129 @@
-Sure! Here are the test cases for the Create Note feature in the Omni-Notes app:
+Below are exploratory test cases focusing on the "Create Text Note" feature in the Omni-notes app based on the provided screenshots:
 
-### Test Case 1
-- **Description**: Create a simple text note.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
+### Test Case 01
+- **Description**: Verify creating a text note with the title and content filled.
+- **Prerequisites**: The app is installed and functioning on an Android device.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Enter text into the "Título" (Title) field.
-  4. Enter text into the "Conteúdo" (Content) field.
-- **Expected results**: The note is created and saved automatically. Returning to the main screen should display the new note with the entered title and content.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title in the "Título" field.
+  4. Enter content in the "Conteúdo" field.
+  5. Close the note by tapping the back button.
+- **Expected Results**: The note is automatically saved with the provided title and content.
 
-### Test Case 2 BUG
-- **Description**: Add an image to the note using the camera.
-- **Prerequisites**: The Omni-Notes app must be installed, the camera must be in working condition, and the user should be on the note creation screen.
+### Test Case 02
+- **Description**: Verify creating a text note without a title.
+- **Prerequisites**: The app is installed and functioning on an Android device.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on the camera icon (first icon in the drop-down menu).
-  4. Take a picture with the camera.
-  5. Confirm the captured image.
-- **Expected results**: The image is attached to the note and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Leave the "Título" field empty.
+  4. Enter content in the "Conteúdo" field.
+  5. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the content, and a default title is assigned if required.
 
-### Test Case 3 BUG
-- **Description**: Record a video and attach it to the note.
-- **Prerequisites**: The Omni-Notes app must be installed, the camera must be in working condition, and the user should be on the note creation screen.
+### Test Case 03
+- **Description**: Verify creating a text note without content.
+- **Prerequisites**: The app is installed and functioning on an Android device.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on the video camera icon (second icon in the drop-down menu).
-  4. Record a video.
-  5. Confirm the recorded video.
-- **Expected results**: The video is attached to the note and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title in the "Título" field.
+  4. Leave the "Conteúdo" field empty.
+  5. Close the note by tapping the back button.
+- **Expected Results**: An empty note with only a title is saved.
 
-### Test Case 4
-- **Description**: Add an audio recording to the note.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
+### Test Case 04 - BUG
+- **Description**: Verify creating a text note with an attachment (Camera photo).
+- **Prerequisites**: The app is installed and functioning on an Android device with a working camera.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on the microphone icon (fifth icon in the drop-down menu).
-  4. Record the audio.
-  5. Stop and confirm the audio recording.
-- **Expected results**: The audio recording is attached to the note and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title and content.
+  4. Tap the paperclip icon and select "Câmera".
+  5. Take a photo and confirm.
+  6. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the photo attached.
 
-### Test Case 5
-- **Description**: Add a sketch to the note.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
+### Test Case 05 - BUG
+- **Description**: Verify creating a text note with an attachment (Video).
+- **Prerequisites**: The app is installed and functioning on an Android device with a working camera.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on the sketch icon (sixth icon in the drop-down menu).
-  4. Draw a simple sketch.
-  5. Save the sketch.
-- **Expected results**: The sketch is attached to the note and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title and content.
+  4. Tap the paperclip icon and select "Vídeo".
+  5. Record a video and confirm.
+  6. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the video attached.
 
-### Test Case 6 BUG
-- **Description**: Add a location to the note.
-- **Prerequisites**: The Omni-Notes app must be installed, and GPS/location services must be enabled on the Android device. The user should be on the note creation screen.
+### Test Case 06
+- **Description**: Verify creating a text note with an attachment (Existing file).
+- **Prerequisites**: The app is installed and functioning on an Android device with access to files.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on the location icon (seventh icon in the drop-down menu).
-  4. Confirm the current location.
-- **Expected results**: The location is attached to the note and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title and content.
+  4. Tap the paperclip icon and select "Arquivos".
+  5. Choose a file from the device storage.
+  6. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the selected file attached.
 
-### Test Case 7
-- **Description**: Attach a file to the note.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen. There should be files stored on the device.
+### Test Case 07
+- **Description**: Verify creating a text note with a voice recording attachment.
+- **Prerequisites**: The app is installed and functioning on an Android device with a working microphone.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on the file icon (fourth icon in the drop-down menu).
-  4. Browse for and select a file to attach.
-- **Expected results**: The file is attached to the note and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title and content.
+  4. Tap the paperclip icon and select "Gravar".
+  5. Record a voice note and confirm.
+  6. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the voice recording attached.
 
-### Test Case 8 BUG
-- **Description**: Add a reminder to the note.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
+### Test Case 08 - BUG
+- **Description**: Verify creating a text note with a location attachment.
+- **Prerequisites**: The app is installed and functioning on an Android device with location services enabled.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Tap on "Adicionar lembrete" (Add reminder).
-  4. Set a reminder for the note.
-  5. Save the reminder.
-- **Expected results**: The reminder is added, and the note is saved along with the reminder.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title and content.
+  4. Tap the paperclip icon and select "Localização".
+  5. Confirm the location.
+  6. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the location information attached.
 
-### Test Case 9
-- **Description**: Create a note with a very long title and content.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
+### Test Case 09
+- **Description**: Verify deleting a text note after creation.
+- **Prerequisites**: A text note is already created.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Enter a very long text into the "Título" (Title) field.
-  4. Enter a very long text into the "Conteúdo" (Content) field.
-- **Expected results**: The note is created and saved automatically with all the text correctly displayed in the note list.
+  1. Open the Omni-notes app.
+  2. Select an existing text note.
+  3. Tap the menu icon (three dots).
+  4. Select "Apagar".
+  5. Confirm the deletion.
+- **Expected Results**: The selected note is deleted and no longer appears in the list of notes. 
 
-### Test Case 10 maybe NONSENSICAL
-- **Description**: Customize the appearance of the note with different fonts and colors.
-- **Prerequisites**: The Omni-Notes app must be installed, and the user should be on the note creation screen.
+### Test Case 10
+- **Description**: Verify attaching a sketch to a text note.
+- **Prerequisites**: The app is installed and functioning on an Android device.
 - **Steps**:
-  1. Open the Omni-Notes app.
-  2. Tap on the "Create Note" (+) button.
-  3. Customize the note by changing the font and background colors (if such options exist within the app).
-- **Expected results**: The note customization is applied and saved automatically.
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a title and content.
+  4. Tap the paperclip icon and select "Esboço".
+  5. Draw a sketch and save.
+  6. Close the note by tapping the back button.
+- **Expected Results**: The note is saved with the sketch attached. 
 
-These tests cover various functionalities and edge cases for the Create Note feature in the Omni-Notes app on an Android device.
+### Test Case 11
+- **Description**: Verify the app's behavior when the content exceeds a large limit.
+- **Prerequisites**: The app is installed and functioning on an Android device.
+- **Steps**:
+  1. Open the Omni-notes app.
+  2. Tap the "+" button and select "Nota de texto".
+  3. Enter a very large amount of text in the "Conteúdo" field.
+  4. Close the note by tapping the back button.
+- **Expected Results**: The app handles the large content smoothly, the note is saved correctly without any performance issues or crashes. 
+
+By performing these exploratory test cases, a thorough assessment of the "Create Text Note" feature in the Omni-notes app can be conducted, checking for both standard functionality and edge cases.

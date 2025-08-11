@@ -1,116 +1,134 @@
-Let's create exploratory test cases for the Create Text Note feature in the Omni-Notes app.
+## Test Case 1
+- **Test number**: 1
+- **Description**: Creating a text note with a title and content
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Enter a title in the "Título" field.
+  3. Enter content in the "Conteúdo" field.
+- **Expected results**: The note should be created and saved automatically after filling in any field.
 
-### Test Case 1
-**Description**: Test creating a simple text note with a title and content.
-**Prerequisites**: The app should be installed and running on the device.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Enter a title in the "Título" field.
-4. Enter some content in the "Conteúdo" field.
-**Expected Results**: The note should be saved automatically and visible in the list of notes.
+## Test Case 2 - BUG
+- **Test number**: 2
+- **Description**: Creating a text note with an attachment from the camera
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Câmera".
+  3. Capture a photo using the camera.
+  4. Ensure the photo is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the captured photo should be attached successfully.
 
-### Test Case 2
-**Description**: Test creation of a note with a title but no content.
-**Prerequisites**: The app should be installed and running on the device.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Enter a title in the "Título" field.
-4. Leave the "Conteúdo" field empty.
-**Expected Results**: The note should be saved automatically and visible in the list of notes with only the title.
+## Test Case 3 - BUG
+- **Test number**: 3
+- **Description**: Creating a text note with an attachment from video
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Vídeo".
+  3. Record a video using the camera.
+  4. Ensure the video is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the recorded video should be attached successfully.
 
-### Test Case 3
-**Description**: Test creation of a note with content but no title.
-**Prerequisites**: The app should be installed and running on the device.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Leave the "Título" field empty.
-4. Enter some content in the "Conteúdo" field.
-**Expected Results**: The note should be saved automatically and visible in the list of notes with only the content.
+## Test Case 4
+- **Test number**: 4
+- **Description**: Creating a text note with an attachment from files
+- **Prerequisites**: The app is installed and opened, and there are files in the device storage
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Arquivos".
+  3. Choose a file from the device storage.
+  4. Ensure the file is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the selected file should be attached successfully.
 
-### Test Case 4 BUG
-**Description**: Test adding an image to a note.
-**Prerequisites**: The app should have access to the device camera and storage.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Tap the "Attachment" icon (paperclip).
-4. Select "Câmera" and take a photo, or select "Arquivos" to choose an existing image.
-5. Enter a title and/or content.
-**Expected Results**: The note should be saved automatically with the attached image and visible in the list of notes.
+## Test Case 5
+- **Test number**: 5
+- **Description**: Creating a text note with a voice recording attachment
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Gravar".
+  3. Record a voice memo.
+  4. Ensure the voice memo is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the voice recording should be attached successfully.
 
-### Test Case 5 BUG
-**Description**: Test adding a video to a note.
-**Prerequisites**: The app should have access to the device's camera and storage.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Tap the "Attachment" icon (paperclip).
-4. Select "Vídeo" and record a video, or select "Arquivos" to choose an existing video.
-5. Enter a title and/or content.
-**Expected Results**: The note should be saved automatically with the attached video and visible in the list of notes.
+## Test Case 6
+- **Test number**: 6
+- **Description**: Creating a text note with a sketch attachment
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Esboço".
+  3. Draw a sketch.
+  4. Ensure the sketch is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the sketch should be attached successfully.
 
-### Test Case 6
-**Description**: Test adding an audio recording to a note.
-**Prerequisites**: The app should have access to the device's microphone.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Tap the "Attachment" icon (paperclip).
-4. Select "Gravar" and record an audio note.
-5. Enter a title and/or content.
-**Expected Results**: The note should be saved automatically with the attached audio recording and visible in the list of notes.
+## Test Case 7 - BUG
+- **Test number**: 7
+- **Description**: Creating a text note with a location attachment
+- **Prerequisites**: The app is installed and opened, and the device's location services are turned on
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Localização".
+  3. Select the current location.
+  4. Ensure the location is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the location should be attached successfully.
 
-### Test Case 7
-**Description**: Test adding a sketch to a note.
-**Prerequisites**: The app should be installed and running on the device.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Tap the "Attachment" icon (paperclip).
-4. Select "Esboço" and create a sketch.
-5. Enter a title and/or content.
-**Expected Results**: The note should be saved automatically with the attached sketch and visible in the list of notes.
+## Test Case 8 - BUG
+- **Test number**: 8
+- **Description**: Creating a text note with an attachment from Pushbullet
+- **Prerequisites**: The app is installed and opened, and Pushbullet is configured on the device
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Tap on the attachment icon and select "Pushbullet".
+  3. Choose an item from Pushbullet.
+  4. Ensure the item is attached to the note.
+  5. Enter a title and content.
+- **Expected results**: The note should be saved automatically and the Pushbullet item should be attached successfully.
 
-### Test Case 8 BUG
-**Description**: Test adding a location to a note.
-**Prerequisites**: The app should have access to the device's location services.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Tap the "Attachment" icon (paperclip).
-4. Select "Localização" and allow location access if prompted.
-5. Enter a title and/or content.
-**Expected Results**: The note should be saved automatically with the attached location and visible in the list of notes.
+## Test Case 9
+- **Test number**: 9
+- **Description**: Creating a note without any content or title
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Leave both the title and content fields empty.
+- **Expected results**: The note should not be created, or if it is created, it should be handled gracefully by the app without causing any crashes or unexpected behaviors.
 
-### Test Case 9 BUG
-**Description**: Test creating a note and using a reminder.
-**Prerequisites**: The app should have access to device notifications.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Enter a title and/or content.
-4. Tap "Adicionar lembrete" to set a reminder for the note.
-**Expected Results**: The note should be saved automatically with the reminder and visible in the list of notes, and a notification should be sent at the reminder time.
+## Test Case 10
+- **Test number**: 10
+- **Description**: Editing an existing note and verifying automatic save
+- **Prerequisites**: A note with a title and content already exists
+- **Steps**:
+  1. Open the existing note.
+  2. Modify the title and content.
+- **Expected results**: The changes should be saved automatically without the need to manually save.
 
-### Test Case 10 BUG
-**Description**: Test attaching a file from Pushbullet.
-**Prerequisites**: The app should be linked with Pushbullet service.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Tap the "Attachment" icon (paperclip).
-4. Select "Pushbullet" and attach a file from Pushbullet.
-5. Enter a title and/or content.
-**Expected Results**: The note should be saved automatically with the attached file and visible in the list of notes.
+## Test Case 11 - BUG
+- **Test number**: 11
+- **Description**: Test creating a note and use the reminder.
+- **Prerequisites**: The app must be able to access device notifications.
+- **Steps**:
+  1. Open the Omni-Notes app.
+  2. Select the Create Note icon.
+  3. Provide a title and/or note content.
+  4. Choose Add Reminder to set a notification for the note.
+- **Expected Results**: The note should be automatically saved with the reminder, displayed in the notes list, and trigger a notification at the scheduled reminder time.
 
-### Edge Case
-**Description**: Test creating a note with excessively long text.
-**Prerequisites**: The app should be installed and running on the device.
-**Steps**:
-1. Open the Omni-Notes app.
-2. Tap the "Create Note" icon.
-3. Enter a very long text in the "Título" and/or "Conteúdo" fields (e.g., 10,000 characters).
-**Expected Results**: The app should handle the long text gracefully, saving the note without crashing or slowing down significantly. The note should be visible in the list of notes.
+## Test Case 12
+- **Test number**: 12
+- **Description**: Verifying that the notes are saved across app restarts
+- **Prerequisites**: The app is installed and opened
+- **Steps**:
+  1. Tap on the "Nota de texto" button.
+  2. Enter a title and content.
+  3. Close the app.
+  4. Restart the app.
+- **Expected results**: The note created before restarting the app should be present and intact.
+
