@@ -1,92 +1,114 @@
-Sure! Below are several test cases for the "Add Note" feature in the AnkiDroid app:
-
 ### Test Case 1
-- **Description**: Verify that a note with simple text in both front and back fields can be added successfully
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Enter "Test Front" in the Front text field.
-  4. Enter "Test Back" in the Back text field.
-  5. Press the check-mark icon to save the note.
-- **Expected Results**: The note should be saved successfully, and a confirmation message should appear.
+- **Description:** Add a note with text in both front and back fields.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Enter "Back Text" in the 'Back' field.
+  5. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully, and is visible in the 'Default' deck.
 
 ### Test Case 2
-- **Description**: Verify that a note with an image in the front field can be added
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection with an accessible image in the gallery.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Tap the paperclip (attachment) icon next to the Front field.
-  4. Select and insert an image from the gallery.
-  5. Enter "Image Note Back" in the Back text field.
-  6. Press the check-mark icon to save the note.
-- **Expected Results**: The note with the image should be saved successfully.
+- **Description:** Add a note with only the front field filled.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Leave the 'Back' field empty.
+  5. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully, and is visible in the 'Default' deck.
 
 ### Test Case 3
-- **Description**: Verify that a note with an audio file in the back field can be added
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection with an accessible audio file in the gallery.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Enter "Audio Note Front" in the Front text field.
-  4. Tap the paperclip (attachment) icon next to the Back field.
-  5. Select and insert an audio file from the gallery.
-  6. Press the check-mark icon to save the note.
-- **Expected Results**: The note with the audio file should be saved successfully.
+- **Description:** Add a note with special characters in the front and back fields.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "!@#$%^&*()" in the 'Front' field.
+  4. Enter "()&*^%$#@!" in the 'Back' field.
+  5. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully, and special characters are correctly displayed when reviewing the note.
 
 ### Test Case 4
-- **Description**: Verify that an empty note (no text, image, or audio) cannot be saved
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Leave both the Front and Back fields empty.
-  4. Press the check-mark icon to save the note.
-- **Expected Results**: The app should display an error or prevent saving an empty note.
+- **Description:** Add a note with an image in the front field.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen, image accessible on the device.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Tap the paperclip icon next to the 'Front' field.
+  4. Select 'Add image' and choose an image from the gallery.
+  5. Fill the 'Back' field with "Back Text".
+  6. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully with the image visible in the front field and the text visible in the back field during review.
 
 ### Test Case 5
-- **Description**: Verify that a note with a large amount of text can be added successfully
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection.
-- **Steps**:
-  1. Open AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Enter a large amount of text (e.g., several paragraphs) in the Front text field.
-  4. Enter a large amount of text in the Back text field.
-  5. Press the check-mark icon to save the note.
-- **Expected Results**: The note with a large amount of text should be saved successfully.
+- **Description:** Add a note with an audio clip in the back field.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen, audio clip accessible on the device.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Tap the paperclip icon next to the 'Back' field.
+  5. Select 'Add audio clip' and choose an audio clip from the gallery.
+  6. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully with the text visible in the front field and the audio clip playable in the back field during review.
 
 ### Test Case 6
-- **Description**: Verify that the note with special characters and emojis can be added successfully
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Enter special characters and emojis (e.g., @#$%^&*()🙂) in the Front text field.
-  4. Enter special characters and emojis in the Back text field.
-  5. Press the check-mark icon to save the note.
-- **Expected Results**: The note with special characters and emojis should be saved successfully.
+- **Description:** Add a note with recording audio for the back field.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Tap the paperclip icon next to the 'Back' field.
+  5. Select 'Record audio' and record a short audio message.
+  6. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully with the text visible in the front field and the recorded audio message in the back field during review.
 
 ### Test Case 7
-- **Description**: Verify that editing a previously added note works correctly
-- **Prerequisites**: A note must already exist in the app.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the existing notes.
-  3. Select and edit an existing note.
-  4. Modify the text in the Front and/or Back fields.
-  5. Press the check-mark icon to save the changes.
-- **Expected Results**: The changes to the note should be saved successfully, and the updated note should be visible.
+- **Description:** Add a note and assign tags.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Enter "Back Text" in the 'Back' field.
+  5. Tap 'Tags' and add a new tag.
+  6. Enter "Test Tag" in the 'Tag name' field and press 'OK'.
+  7. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully with the tag "Test Tag" assigned to it.
 
 ### Test Case 8
-- **Description**: Verify that a note with both image and audio attachments can be added
-- **Prerequisites**: The app should be installed and running on an Android phone; ensure no internet connection with accessible image and audio files.
-- **Steps**:
-  1. Open the AnkiDroid app.
-  2. Navigate to the "Add Note" screen.
-  3. Tap the paperclip (attachment) icon next to the Front field and insert an image.
-  4. Tap the paperclip (attachment) icon next to the Back field and insert an audio file.
-  5. Press the check-mark icon to save the note.
-- **Expected Results**: The note with both image and audio attachments should be saved successfully.
+- **Description:** Add a note with a long text in front and back fields.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter a long text (e.g., a paragraph) in the 'Front' field.
+  4. Enter a long text (e.g., a paragraph) in the 'Back' field.
+  5. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** The note is saved successfully with long texts correctly displayed during review.
 
-These test cases ensure that various aspects of the "Add Note" feature are thoroughly tested, including functionality, edge cases, and unusual flows.
+### Test Case 9
+- **Description:** Add a note with the 'Basic (and reversed card)' type.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic (and reversed card)' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Enter "Back Text" in the 'Back' field.
+  5. Press the check mark at the top right of the screen to save the note.
+- **Expected Results:** Two cards are created, one with the front text shown first, and the other with the back text shown first.
+
+### Test Case 10 - NONSENSICAL
+- **Description:** Add a note with the 'Basic (and reversed card)' type, enter text only in the front field, then cancel to check if nothing is saved.
+- **Prerequisites:** AnkiDroid app installed, app opened and navigated to 'Add Note' screen.
+- **Steps:**
+  1. Select 'Basic (and reversed card)' in the 'Type' dropdown.
+  2. Select 'Default' in the 'Deck' dropdown.
+  3. Enter "Front Text" in the 'Front' field.
+  4. Leave the 'Back' field empty.
+  5. Press the 'Cancel' button.
+- **Expected Results:** No cards are created, and nothing is saved in the notes list.

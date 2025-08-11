@@ -1,94 +1,144 @@
-Certainly! Here are some exploratory test cases for the "Add Note" feature in Ankidroid:
+Here are some exploratory test cases for the "Add Note" functionality in the Ankidroid app. These test cases focus on various aspects such as text, image, audio additions, and edge cases.
 
-### Test Case 1
-**-Description:** Verifying the ability to add a note with text on both front and back fields.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Click on the "Front" field and enter some text.
-2. Click on the "Back" field and enter some text.
-3. Tap on the checkmark icon to save the note.
-**-Expected results:** The note is saved successfully and appears in the list of notes.
+### Test Case 1:
+- **Test Number:** 1
+- **Description:** Add a note with text only in the front field.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Enter text in the "Front" field.
+  5. Leave the "Back" field empty.
+  6. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with text in the front field and an empty back field.
 
-### Test Case 2
-**-Description:** Verifying the application’s response when adding an image to the front field.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Click on the "Front" field and select the option to add an image.
-2. Choose an image from the gallery.
-3. Click on the "Back" field and enter some text.
-4. Tap on the checkmark icon to save the note.
-**-Expected results:** The note is saved successfully with the image in the front field and text in the back field.
+### Test Case 2:
+- **Test Number:** 2
+- **Description:** Add a note with text only in the back field.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Leave the "Front" field empty.
+  5. Enter text in the "Back" field.
+  6. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with text in the back field and an empty front field.
 
-### Test Case 3
-**-Description:** Verifying the application’s response when adding audio to the back field.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Click on the "Front" field and enter some text.
-2. Click on the "Back" field and select the option to add audio.
-3. Choose an audio file from the device.
-4. Tap on the checkmark icon to save the note.
-**-Expected results:** The note is saved successfully with text in the front field and the audio file in the back field.
+### Test Case 3:
+- **Test Number:** 3
+- **Description:** Add a note with text in both the front and back fields.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Enter text in both the "Front" and "Back" fields.
+  5. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with text in both the front and back fields.
 
-### Test Case 4
-**-Description:** Verifying the application's response to leaving both fields empty.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Leave both "Front" and "Back" fields empty.
-2. Tap on the checkmark icon to save the note.
-**-Expected results:** The app should show an error message or prevent the note from being saved.
+### Test Case 4:
+- **Test Number:** 4
+- **Description:** Add a note with an image in the front field.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Tap the attachment icon next to the "Front" field.
+  5. Choose "Add image" and select an image from the device.
+  6. Leave the "Back" field empty.
+  7. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with an image in the front field and an empty back field.
 
-### Test Case 5
-**-Description:** Checking the maximum character limit for text in the front and back fields.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Click on the "Front" field and enter a large amount of text (e.g., 10,000 characters).
-2. Click on the "Back" field and enter a large amount of text (e.g., 10,000 characters).
-3. Tap on the checkmark icon to save the note.
-**-Expected results:** The app should either save the note with truncated text or display an error message about exceeding the character limit.
+### Test Case 5:
+- **Test Number:** 5
+- **Description:** Add a note with an audio clip in the back field.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Leave the "Front" field empty.
+  5. Tap the attachment icon next to the "Back" field.
+  6. Choose "Add audio clip" and select an audio file from the device.
+  7. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with an audio clip in the back field and an empty front field.
 
-### Test Case 6
-**-Description:** Verifying multiple tags addition functionality.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Click on the 'Tags' button.
-2. Add multiple tags (e.g., tag1, tag2, tag3).
-3. Confirm the tags.
-4. Save the note by clicking on the checkmark icon.
-**-Expected results:** The note is saved successfully with all added tags associated with it.
+### Test Case 6:
+- **Test Number:** 6
+- **Description:** Add a note with both text and an image.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Enter text in the "Front" field.
+  5. Tap the attachment icon next to the "Back" field.
+  6. Choose "Add image" and select an image from the device.
+  7. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with text in the front field and an image in the back field.
 
-### Test Case 7
-**-Description:** Verifying app behavior on rotating the device while adding a note.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Start creating a note by adding text to the "Front" and "Back" fields.
-2. Rotate the device.
-3. Check if the entered data is retained and if the UI adjusts correctly.
-**-Expected results:** The entered text and partially filled fields are retained, and the app handles the rotation without crashing.
+### Test Case 7:
+- **Test Number:** 7
+- **Description:** Add a note with text, an image, and an audio clip.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Enter text in the "Front" field.
+  5. Tap the attachment icon next to the "Front" field.
+  6. Choose "Add image" and select an image from the device.
+  7. Tap the attachment icon next to the "Back" field.
+  8. Choose "Add audio clip" and select an audio file from the device.
+  9. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with text and an image in the front field and an audio clip in the back field.
 
-### Test Case 8
-**-Description:** Verify adding a note with special characters and emojis in text fields.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Enter special characters and emojis in the "Front" field.
-2. Enter special characters and emojis in the "Back" field.
-3. Tap on the checkmark icon to save the note.
-**-Expected results:** The note is saved successfully with special characters and emojis displayed correctly.
+### Test Case 8:
+- **Test Number:** 8
+- **Description:** Add a note with a recorded audio clip in the front field.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Tap the attachment icon next to the "Front" field.
+  5. Choose "Record audio" and record an audio clip.
+  6. Leave the "Back" field empty.
+  7. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with the recorded audio clip in the front field and an empty back field.
 
-### Test Case 9
-**-Description:** Verifying application's response when adding an image of unsupported format (e.g., .svg or .tiff).
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Click on the "Front" field and attempt to add an unsupported image format.
-2. Observe the response.
-**-Expected results:** The app should display an error message that the image format is unsupported and prevent the note from being saved with the unsupported image.
+### Test Case 9:
+- **Test Number:** 9
+- **Description:** Add a note with a recorded audio clip in both fields.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Tap the attachment icon next to the "Front" field.
+  5. Choose "Record audio" and record an audio clip.
+  6. Tap the attachment icon next to the "Back" field.
+  7. Choose "Record audio" and record an audio clip.
+  8. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with recorded audio clips in both the front and back fields.
 
-### Test Case 10 NONSENSICAL
-**-Description:** Verifying the behavior of the "Cancel" button while adding a note.
-**-Prerequisites:** The app is launched and on the "Add Note" screen.
-**-Steps:**
-1. Enter text or add images/audio in the "Front" and "Back" fields.
-2. Click on the "Cancel" button.
-3. Confirm the cancellation if prompted.
-**-Expected results:** The app discards the note and returns to the previous screen without saving any entered data or media.
+### Test Case 10:
+- **Test Number:** 10
+- **Description:** Add a tag to a note.
+- **Prerequisites:** Ankidroid app installed and opened.
+- **Steps:**
+  1. Open the "Add Note" screen.
+  2. Select "Type" as "Basic".
+  3. Ensure "Deck" is set to "Default".
+  4. Enter text in the "Front" field.
+  5. Tap on "Tags:".
+  6. Tap on the "+" icon.
+  7. Enter a tag name and tap "OK".
+  8. Tap "OK" again in the tags dialog.
+  9. Tap the checkmark to save.
+- **Expected Results:** The note should be saved successfully with the specified tag added.
 
-These exploratory tests aim to uncover bugs and understand the behavior of the "Add Note" feature under various scenarios.
+These test cases should cover various interactions users may have with the note-adding feature in Ankidroid. Be sure to also test for other potential edge cases and error conditions as needed.

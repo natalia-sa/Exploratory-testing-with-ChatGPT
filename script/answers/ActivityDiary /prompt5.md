@@ -1,95 +1,116 @@
-Based on the information provided and the screenshot of the app's GUI, here are some detailed test cases for the "Update Location Service" feature in the "ActivityDiary" app:
+## Exploratory Test Cases for Update Location Service in ActivityDiary App
 
-### Test Case 1
-- **Description**: Verify that the user can successfully turn off the Location Service.
-- **Prerequisites**: The app is installed and running.
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Location Service" option.
-  3. Select the "off" option from the "Location Service" settings.
-- **Expected results**: The "Location Service" is turned off, and the "Update period" and "Update distance" options are disabled or hidden.
+### Test Case 1:
+- **Test Number**: 1
+- **Description**: Verify that when the Location Service is set to "OFF", location tracking is disabled.
+- **Prerequisites**: The app is installed and opened on the device.
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Select the "Location Service" field.
+  3. Choose the "OFF" option.
+  4. Attempt to access the "Update period" and "Update distance" fields.
+- **Expected Results**: 
+  - The "Location Service" setting should display "User location not tracked at all."
+  - The "Update period" and "Update distance" fields should be disabled/greyed out.
 
-### Test Case 2
-- **Description**: Verify that the user can select the "Network" option for Location Service.
-- **Prerequisites**: The app is installed and running.
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Location Service" option.
-  3. Select the "Network" option.
-  4. Observe the "Update period" and "Update distance" options.
-- **Expected results**: The "Network" option is selected, and the "Update period" and "Update distance" options are enabled.
+### Test Case 2:
+- **Test Number**: 2
+- **Description**: Verify that when the Location Service is set to "Network", the user can update the "period" and "distance" settings.
+- **Prerequisites**: The app is installed and opened on the device.
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Select the "Location Service" field.
+  3. Choose the "Network" option.
+  4. Attempt to update the "Update period" to a different value.
+  5. Attempt to update the "Update distance" to a different value.
+- **Expected Results**: 
+  - The "Location Service" setting should display "Network used to track device location."
+  - The "Update period" and "Update distance" fields should be enabled and the new values should be saved correctly.
 
-### Test Case 3
-- **Description**: Verify that the user can select the "GPS" option for Location Service.
-- **Prerequisites**: The app is installed and running.
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Location Service" option.
-  3. Select the "GPS" option.
-  4. Observe the "Update period" and "Update distance" options.
-- **Expected results**: The "GPS" option is selected, and the "Update period" and "Update distance" options are enabled.
+### Test Case 3:
+- **Test Number**: 3
+- **Description**: Verify that when the Location Service is set to "GPS", the user can update the "period" and "distance" settings.
+- **Prerequisites**: The app is installed and opened on the device.
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Select the "Location Service" field.
+  3. Choose the "GPS" option.
+  4. Attempt to update the "Update period" to a different value.
+  5. Attempt to update the "Update distance" to a different value.
+- **Expected Results**: 
+  - The "Location Service" setting should display "GPS used to track device location."
+  - The "Update period" and "Update distance" fields should be enabled and the new values should be saved correctly.
 
-### Test Case 4
-- **Description**: Verify that updating the "Update period" and "Update distance" is only allowed when "Network" or "GPS" is selected.
-- **Prerequisites**: The app is installed and running, and the "Location Service" is set to "off".
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Attempt to change the "Update period" or "Update distance".
-- **Expected results**: The "Update period" and "Update distance" options are disabled or cannot be changed.
+### Test Case 4:
+- **Test Number**: 4
+- **Description**: Verify the app's behavior when rapidly toggling between "OFF", "Network", and "GPS" options.
+- **Prerequisites**: The app is installed and opened on the device.
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Quickly toggle the "Location Service" between "OFF", "Network", and "GPS" multiple times.
+  3. Check the status of the "Update period" and "Update distance" fields after each toggle.
+- **Expected Results**: 
+  - The app should correctly update the "Location Service" status.
+  - The "Update period" and "Update distance" fields should be enabled/disabled correspondingly without glitches or crashes.
 
-### Test Case 5
-- **Description**: Verify that the user can change the "Update period" value.
-- **Prerequisites**: The app is installed and running, and the "Network" or "GPS" option is selected for "Location Service".
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Update period" option.
-  3. Change the "Update period" value to a new acceptable value.
-- **Expected results**: The "Update period" is successfully updated to the new value.
+### Test Case 5:
+- **Test Number**: 5
+- **Description**: Verify that valid values are accepted and saved for "Update period" and "Update distance".
+- **Prerequisites**: The app is installed and opened on the device, Location Service is set to either "Network" or "GPS".
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Select the "Location Service" field and choose either "Network" or "GPS."
+  3. Update the "Update period" to valid values within the accepted range (e.g., 1 minute, 10 minutes).
+  4. Update the "Update distance" to valid values within the accepted range (e.g., 10 meters, 100 meters).
+- **Expected Results**: 
+  - The new values should be saved correctly and displayed after navigating away and returning to the settings.
 
-### Test Case 6
-- **Description**: Verify that the user can change the "Update distance" value.
-- **Prerequisites**: The app is installed and running, and the "Network" or "GPS" option is selected for "Location Service".
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Update distance" option.
-  3. Change the "Update distance" value to a new acceptable value.
-- **Expected results**: The "Update distance" is successfully updated to the new value.
+### Test Case 6: - 2 BUGS
+- **Test Number**: 6
+- **Description**: Verify that invalid values are not accepted for "Update period" and "Update distance".
+- **Prerequisites**: The app is installed and opened on the device, Location Service is set to either "Network" or "GPS".
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Select the "Location Service" field and choose either "Network" or "GPS."
+  3. Attempt to update the "Update period" with invalid values (e.g., negative value, 0, text input).
+  4. Attempt to update the "Update distance" with invalid values (e.g., negative value, 0, text input).
+- **Expected Results**: 
+  - An error message or validation feedback should be displayed, and the invalid values should not be accepted or saved.
 
-### Test Case 7 bug
-- **Description**: Verify that an error is displayed when entering invalid values for "Update period".
-- **Prerequisites**: The app is installed and running, and the "Network" or "GPS" option is selected for "Location Service".
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Update period" option.
-  3. Enter an invalid value (e.g., a negative number or a non-numeric value).
-- **Expected results**: An error message is displayed, indicating that the value is invalid.
+### Test Case 7:
+- **Test Number**: 7
+- **Description**: Verify the UI elements and text are correctly displayed and aligned.
+- **Prerequisites**: The app is installed and opened on the device.
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Observe the "Location Service," "Update period," and "Update distance" fields.
+  3. Check text alignment, font size, and color consistency.
+- **Expected Results**: 
+  - All UI elements and text should be correctly displayed, properly aligned, and consistent in font size and color as per design specifications.
 
-### Test Case 8 bug
-- **Description**: Verify that an error is displayed when entering invalid values for "Update distance".
-- **Prerequisites**: The app is installed and running, and the "Network" or "GPS" option is selected for "Location Service".
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Locate the "Update distance" option.
-  3. Enter an invalid value (e.g., a negative number or a non-numeric value).
-- **Expected results**: An error message is displayed, indicating that the value is invalid.
+### Test Case 8:
+- **Test Number**: 8
+- **Description**: Verify behavior when the device is offline and user attempts to update location settings.
+- **Prerequisites**: The app is installed and opened on the device. The device is set to airplane mode (offline).
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Select the "Location Service" field.
+  3. Attempt to choose "Network" or "GPS" options.
+  4. Attempt to update "Update period" and "Update distance."
+- **Expected Results**: 
+  - The app should either prevent changing location settings or show appropriate error messages indicating the device is offline.
 
-### Test Case 9
-- **Description**: Verify that the "Update period" and "Update distance" values are saved persistently.
-- **Prerequisites**: The app is installed and running, and the "Network" or "GPS" option is selected for "Location Service".
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Set new values for "Update period" and "Update distance".
-  3. Close the app completely.
-  4. Reopen the app and navigate back to the Settings page.
-- **Expected results**: The "Update period" and "Update distance" values should persist and display the newly set values.
+### Test Case 9:
+- **Test Number**: 9
+- **Description**: Verify location updates are correctly handled when switching from "Network" to "GPS."
+- **Prerequisites**: The app is installed and opened on the device, Location Service is set to "Network."
+- **Steps**: 
+  1. Navigate to the "Settings" screen in the app.
+  2. Set the "Location Service" to "Network."
+  3. Update "Update period" and "Update distance."
+  4. Switch "Location Service" to "GPS."
+  5. Check if the updated values for "Update period" and "Update distance" persist.
+- **Expected Results**: 
+  - The app should retain the updated values for "Update period" and "Update distance" and appropriately apply them when switching from "Network" to "GPS."
 
-### Test Case 10
-- **Description**: Verify that switching from "GPS" to "Network" retains the "Update period" and "Update distance" values.
-- **Prerequisites**: The app is installed and running, and the "GPS" option is selected with specific "Update period" and "Update distance" values.
-- **Steps**:
-  1. Navigate to the Settings page of the app.
-  2. Change the "Location Service" from "GPS" to "Network".
-  3. Observe the "Update period" and "Update distance" values.
-- **Expected results**: The "Update period" and "Update distance" values remain unchanged.
-
-These test cases will help in thoroughly testing the "Update Location Service" feature, uncover potential issues, and ensure smooth and predictable user interactions.
+By conducting these tests, potential edge cases and unusual flows will be covered, and any possible bugs related to updating location services in the ActivityDiary app will be identified.

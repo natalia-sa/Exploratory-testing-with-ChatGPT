@@ -9,8 +9,8 @@ api_key = os.getenv('OPENAI_API_KEY')
 
 functionalities = [
     {
-        "nome": "Create Text Note",
-        "imagens": ["./images/note/note2.png","./images/note/note4.png"]
+        "name": "Feature",
+        "images": []
     }
 ]
 
@@ -30,26 +30,11 @@ headers = {
 }
 
 for func in functionalities:
-    textual_message = f"""From the point of view of a tester, give me exploratory test cases to the
-{func['nome']} feature in the Omni-notes app.
-This app is a note taking application . Please consider that to carry out these tests you only have access to an android cell phone. 
-To use this app it is not necessary to create an account or log in, 
-therefore it is not necessary to include tests related to this. The app is in portuguese, 
-but you must answer in english. Notes are already saved after filling in any of the form fields, 
-there is no need to click on any button to save them. Also pass throug each form of attachment
-Consider unusual flows, try to find possible bugs, failures,
-security issues, etc.
-I will provide screenshots of the app GUI.
-The test cases should follow the structure below:
-- test number
-- Description: The test case description
-- Prerequisites: Specifies the conditions that must be met
-before executing the test steps
-- Steps: Enumerated steps to execute the test
-- Expected results: The expected test results"""
+    textual_message = f"""From the point of view of a tester, give me exploratory test cases for the 
+    {func['name']} ..."""
 
-    image_paths = func["imagens"]
-    answer_path = f"./answers/OmniNotes/retest-6/prompt6-2.md"
+    image_paths = func["images"]
+    answer_path = f"./answers/{func['name']}"
 
     payload = {
         "model": "gpt-4o-2024-05-13",

@@ -29,7 +29,7 @@ headers = {
 }
 
 payload = {
-  "model": "gpt-4o",
+  "model": "gpt-4o-2024-05-13",
   "messages": [
     {
       "role": "user",
